@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://48io4jtiaj5t" path="res://Scenes/falling_rock.tscn" id="4_mro6d"]
 [ext_resource type="PackedScene" uid="uid://yuv1d10akw2h" path="res://Scenes/collectible_bullet.tscn" id="5_38l20"]
 [ext_resource type="PackedScene" uid="uid://d3jkfuc0bhhh0" path="res://Scenes/stinky_bubble.tscn" id="6_lt1nt"]
-[ext_resource type="PackedScene" path="res://Scenes/side.tscn" id="7_lj3i0"]
+[ext_resource type="PackedScene" uid="uid://brsj11mvkc6fj" path="res://Scenes/side.tscn" id="7_lj3i0"]
 [ext_resource type="PackedScene" uid="uid://cphod0ydvo8ke" path="res://Scenes/shield_bubble.tscn" id="8_odn0u"]
 
 [node name="Game" type="Node"]

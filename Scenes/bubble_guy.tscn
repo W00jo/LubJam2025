@@ -1,15 +1,65 @@
-[gd_scene load_steps=54 format=3 uid="uid://31sgm2m6coed"]
+[gd_scene load_steps=53 format=3 uid="uid://31sgm2m6coed"]
 
-[ext_resource type="Texture2D" uid="uid://dtnhi7rhpfs5t" path="res://icon.svg" id="1_pnojc"]
 [ext_resource type="Script" path="res://Scripts/bubble_guy.gd" id="1_v53aw"]
-[ext_resource type="Texture2D" uid="uid://nu8hd5rsgbt4" path="res://Assets/Sprites/Characters/Bubble-Sheet.png" id="3_3im20"]
+[ext_resource type="Texture2D" uid="uid://be6a1lrdmrnno" path="res://Assets/Sprites/Characters/Bubble-Sheet.png" id="3_3im20"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4iesc"]
-size = Vector2(78, 75)
+[sub_resource type="CircleShape2D" id="CircleShape2D_fln30"]
+radius = 59.357
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2hfaa"]
 radius = 64.0
 height = 128.0
+
+[sub_resource type="Animation" id="Animation_e8ub2"]
+resource_name = "Breaking_Bubble"
+length = 0.4
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShieldArea/Guy:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_00yjh"]
+resource_name = "Death_Dart"
+length = 1.8
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShieldArea/Guy:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [51, 52, 53, 54, 55, 56, 57, 58, 59]
+}
+
+[sub_resource type="Animation" id="Animation_cntpl"]
+resource_name = "Death_No_Air"
+length = 1.6
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShieldArea/Guy:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [46, 47, 48, 49]
+}
 
 [sub_resource type="Animation" id="Animation_kl4sb"]
 resource_name = "Idle"
@@ -29,8 +79,11 @@ tracks/0/keys = {
 "values": [23, 24, 25, 26]
 }
 
-[sub_resource type="Animation" id="Animation_2itcv"]
-length = 0.001
+[sub_resource type="Animation" id="Animation_68l1p"]
+resource_name = "Idle_NoBubble"
+length = 1.6
+loop_mode = 1
+step = 0.4
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -38,16 +91,16 @@ tracks/0/path = NodePath("ShieldArea/Guy:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.333333, 0.666667, 1, 1.33333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [23]
+"values": [4, 5, 6, 7, 8]
 }
 
-[sub_resource type="Animation" id="Animation_e8ub2"]
-resource_name = "Breaking_Bubble"
-length = 0.4
-step = 0.2
+[sub_resource type="Animation" id="Animation_rffrq"]
+resource_name = "Idle_noBubbles_2"
+length = 1.6
+step = 0.4
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -55,10 +108,10 @@ tracks/0/path = NodePath("ShieldArea/Guy:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.4, 0.8, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [2, 3]
+"values": [9, 10, 11, 12]
 }
 
 [sub_resource type="Animation" id="Animation_l4ce8"]
@@ -76,6 +129,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [13, 14, 15, 16, 17, 18, 19, 20, 21]
+}
+
+[sub_resource type="Animation" id="Animation_2itcv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShieldArea/Guy:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [23]
 }
 
 [sub_resource type="Animation" id="Animation_5rdhp"]
@@ -130,75 +198,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
 "values": [40, 41, 42, 43, 44]
-}
-
-[sub_resource type="Animation" id="Animation_cntpl"]
-resource_name = "Death_No_Air"
-length = 1.6
-step = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ShieldArea/Guy:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4, 0.8, 1.2),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [46, 47, 48, 49]
-}
-
-[sub_resource type="Animation" id="Animation_00yjh"]
-resource_name = "Death_Dart"
-length = 1.8
-step = 0.2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ShieldArea/Guy:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [51, 52, 53, 54, 55, 56, 57, 58, 59]
-}
-
-[sub_resource type="Animation" id="Animation_68l1p"]
-resource_name = "Idle_NoBubble"
-length = 1.6
-loop_mode = 1
-step = 0.4
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ShieldArea/Guy:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.333333, 0.666667, 1, 1.33333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 1,
-"values": [4, 5, 6, 7, 8]
-}
-
-[sub_resource type="Animation" id="Animation_rffrq"]
-resource_name = "Idle_noBubbles_2"
-length = 1.6
-step = 0.4
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ShieldArea/Guy:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4, 0.8, 1.2),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [9, 10, 11, 12]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gjj3l"]
@@ -377,62 +376,12 @@ transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition
 graph_offset = Vector2(108, -52)
 
 [node name="BubbleGuy" type="CharacterBody2D" groups=["BubbleGuy"]]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-visible = true
-modulate = Color(1, 1, 1, 1)
-self_modulate = Color(1, 1, 1, 1)
-show_behind_parent = false
-top_level = false
-light_mask = 1
-visibility_layer = 1
-z_index = 0
-z_as_relative = true
-y_sort_enabled = false
-texture_filter = 0
-texture_repeat = 0
-material = null
-use_parent_material = false
-position = Vector2(0, 0)
-rotation = 0.0
-scale = Vector2(1, 1)
-skew = 0.0
-disable_mode = 0
-collision_layer = 1
 collision_mask = 14
-collision_priority = 1.0
-input_pickable = false
-motion_mode = 0
-up_direction = Vector2(0, -1)
-velocity = Vector2(0, 0)
-slide_on_ceiling = true
-max_slides = 4
-wall_min_slide_angle = 0.261799
-floor_stop_on_slope = true
-floor_constant_speed = false
-floor_block_on_wall = true
-floor_max_angle = 0.785398
-floor_snap_length = 1.0
-platform_on_leave = 0
-platform_floor_layers = 4294967295
-platform_wall_layers = 0
-safe_margin = 0.08
 script = ExtResource("1_v53aw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -0.5)
-shape = SubResource("RectangleShape2D_4iesc")
-
-[node name="Bubble" type="Sprite2D" parent="."]
-modulate = Color(0.215686, 1, 0.843137, 0.282353)
-texture = ExtResource("1_pnojc")
+shape = SubResource("CircleShape2D_fln30")
 
 [node name="ShieldArea" type="Area2D" parent="."]
 

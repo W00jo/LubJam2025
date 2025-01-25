@@ -7,7 +7,7 @@ var has_shield: bool = true
 var guy_dead: bool = false
 var dolphin_dead: bool = false
 
-var guy_speed = 350
+var guy_speed = 380
 var dolphin_speed = 350
 
 
