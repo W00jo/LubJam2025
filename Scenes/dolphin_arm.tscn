@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://mfdivfgj3c33"]
 
 [ext_resource type="Script" path="res://Scripts/dolphin_arm.gd" id="1_5x7uu"]
-[ext_resource type="Texture2D" uid="uid://dtnhi7rhpfs5t" path="res://icon.svg" id="2_c4r3k"]
+[ext_resource type="Texture2D" uid="uid://208r3w0atxb1" path="res://Assets/Sprites/Delphin/Delfinsamareka20.png" id="2_od0wk"]
 
 [sub_resource type="Gradient" id="Gradient_kgtv5"]
 offsets = PackedFloat32Array(0, 0.846667)
@@ -11,7 +11,7 @@ colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
 script = ExtResource("1_5x7uu")
 
 [node name="BulletSpawn" type="Marker2D" parent="."]
-position = Vector2(93, -100)
+position = Vector2(59, -24)
 
 [node name="Line2D" type="Line2D" parent="."]
 position = Vector2(38, -50)
@@ -19,11 +19,5 @@ default_color = Color(1, 1, 1, 0.709804)
 gradient = SubResource("Gradient_kgtv5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(21.2, -65.2)
-scale = Vector2(0.3, 0.7)
-texture = ExtResource("2_c4r3k")
-
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(41.2, -98.2)
-scale = Vector2(0.6, 0.2)
-texture = ExtResource("2_c4r3k")
+position = Vector2(1, 0)
+texture = ExtResource("2_od0wk")
