@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://mfdivfgj3c33"]
+
+[ext_resource type="Script" path="res://Scripts/dolphin_arm.gd" id="1_5x7uu"]
+[ext_resource type="Texture2D" uid="uid://dtnhi7rhpfs5t" path="res://icon.svg" id="2_c4r3k"]
+
+[node name="DolphinArm" type="Node2D"]
+script = ExtResource("1_5x7uu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(21.2, -65.2)
+scale = Vector2(0.3, 0.7)
+texture = ExtResource("2_c4r3k")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(41.2, -98.2)
+scale = Vector2(0.6, 0.2)
+texture = ExtResource("2_c4r3k")
+
+[node name="BulletsNode" type="Node2D" parent="."]
+position = Vector2(74, -103)

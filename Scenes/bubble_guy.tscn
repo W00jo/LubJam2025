@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://31sgm2m6coed"]
+
+[ext_resource type="Texture2D" uid="uid://dtnhi7rhpfs5t" path="res://icon.svg" id="1_pnojc"]
+[ext_resource type="Script" path="res://Scripts/bubble_guy.gd" id="1_v53aw"]
+
+[node name="BubbleGuy" type="CharacterBody2D"]
+script = ExtResource("1_v53aw")
+
+[node name="Bubble" type="CharacterBody2D" parent="."]
+
+[node name="Bubble" type="Sprite2D" parent="Bubble"]
+modulate = Color(0.215686, 1, 0.843137, 0.282353)
+texture = ExtResource("1_pnojc")
+
+[node name="Guy" type="Sprite2D" parent="."]
+modulate = Color(1, 0.290196, 1, 1)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_pnojc")
