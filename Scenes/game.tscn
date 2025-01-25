@@ -1,18 +1,21 @@
-[gd_scene load_steps=9 format=3 uid="uid://c0r23lm2xyl01"]
+[gd_scene load_steps=10 format=3 uid="uid://c0r23lm2xyl01"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_87dlu"]
 [ext_resource type="PackedScene" uid="uid://31sgm2m6coed" path="res://Scenes/bubble_guy.tscn" id="1_k043y"]
 [ext_resource type="PackedScene" uid="uid://gvfdf4fim2n0" path="res://Scenes/dolphin.tscn" id="2_a4dgr"]
+[ext_resource type="PackedScene" uid="uid://hg7f7x82640v" path="res://Scenes/parallax_mapa1.tscn" id="2_telu0"]
 [ext_resource type="PackedScene" uid="uid://48io4jtiaj5t" path="res://Scenes/falling_rock.tscn" id="4_mro6d"]
 [ext_resource type="PackedScene" uid="uid://yuv1d10akw2h" path="res://Scenes/collectible_bullet.tscn" id="5_38l20"]
 [ext_resource type="PackedScene" uid="uid://d3jkfuc0bhhh0" path="res://Scenes/stinky_bubble.tscn" id="6_lt1nt"]
-[ext_resource type="PackedScene" uid="uid://brsj11mvkc6fj" path="res://Scenes/side.tscn" id="7_lj3i0"]
+[ext_resource type="PackedScene" path="res://Scenes/side.tscn" id="7_lj3i0"]
 [ext_resource type="PackedScene" uid="uid://cphod0ydvo8ke" path="res://Scenes/shield_bubble.tscn" id="8_odn0u"]
 
 [node name="Game" type="Node"]
 
 [node name="Level" type="Node2D" parent="."]
 script = ExtResource("1_87dlu")
+
+[node name="ParallaxBackground" parent="Level" instance=ExtResource("2_telu0")]
 
 [node name="BubbleGuy" parent="Level" instance=ExtResource("1_k043y")]
 position = Vector2(810, 267)
@@ -32,7 +35,7 @@ position = Vector2(1073, 540)
 [node name="StinkyBubble" parent="Level" instance=ExtResource("6_lt1nt")]
 position = Vector2(871, 543)
 
-[node name="Side" parent="Level" instance=ExtResource("7_lj3i0")]
-
 [node name="ShieldBubble" parent="Level" instance=ExtResource("8_odn0u")]
 position = Vector2(1192, 194)
+
+[node name="Side" parent="Level" instance=ExtResource("7_lj3i0")]
