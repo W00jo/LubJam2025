@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://hg7f7x82640v"]
 
-[ext_resource type="Texture2D" uid="uid://crobrxl4gjadl" path="res://Assets/Sprites/tło/parallax1.png" id="1_7oa6t"]
 [ext_resource type="Texture2D" uid="uid://lns7xlsri6q6" path="res://Assets/Sprites/tło/MorzeTlo.png" id="1_nadaq"]
-[ext_resource type="Texture2D" uid="uid://boyffkjiq0nx6" path="res://Assets/Sprites/tło/floors1.png" id="2_i51ro"]
+[ext_resource type="Texture2D" uid="uid://cvthk1a6h2bsg" path="res://Assets/Sprites/tło/long_parallax.png" id="2_tfmaq"]
+[ext_resource type="Texture2D" uid="uid://ch4mv202757fo" path="res://Assets/Sprites/tło/long_floors.png" id="3_8i3lg"]
 
 [node name="ParallaxBackground" type="ParallaxBackground"]
 
@@ -17,17 +17,17 @@ texture = ExtResource("1_nadaq")
 
 [node name="cave" type="ParallaxLayer" parent="."]
 motion_scale = Vector2(0.8, 0.8)
-motion_mirroring = Vector2(1920, 0)
+motion_mirroring = Vector2(11520, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="cave"]
-position = Vector2(960, 540)
+position = Vector2(5760, 540)
 scale = Vector2(4, 4)
-texture = ExtResource("1_7oa6t")
+texture = ExtResource("2_tfmaq")
 
 [node name="floors" type="ParallaxLayer" parent="."]
-motion_mirroring = Vector2(1920, 0)
+motion_mirroring = Vector2(11520, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="floors"]
-position = Vector2(960, 540)
+position = Vector2(5760, 540)
 scale = Vector2(4, 4)
-texture = ExtResource("2_i51ro")
+texture = ExtResource("3_8i3lg")
