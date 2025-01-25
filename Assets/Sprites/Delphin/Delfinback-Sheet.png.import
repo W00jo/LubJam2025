@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btbrbnv15k7i2"
-path="res://.godot/imported/Mapa2.png-f8a3027224c6a75fb32085585bacaca4.ctex"
+uid="uid://dtlgyoij7agi5"
+path="res://.godot/imported/Delfinback-Sheet.png-a9e47c0a73e85d5010b68af253c2e47f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/tło/Mapa2.png"
-dest_files=["res://.godot/imported/Mapa2.png-f8a3027224c6a75fb32085585bacaca4.ctex"]
+source_file="res://Assets/Sprites/Delphin/Delfinback-Sheet.png"
+dest_files=["res://.godot/imported/Delfinback-Sheet.png-a9e47c0a73e85d5010b68af253c2e47f.ctex"]
 
 [params]
 
