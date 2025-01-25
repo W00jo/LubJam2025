@@ -16,5 +16,5 @@ position = Vector2(41.2, -98.2)
 scale = Vector2(0.6, 0.2)
 texture = ExtResource("2_c4r3k")
 
-[node name="BulletsNode" type="Node2D" parent="."]
-position = Vector2(74, -103)
+[node name="BulletSpawn" type="Marker2D" parent="."]
+position = Vector2(93, -100)
