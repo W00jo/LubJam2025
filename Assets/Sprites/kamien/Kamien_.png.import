@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lmofjnmt7e0q"
-path="res://.godot/imported/Gacek.png-01f6765b8ed9161eb7fbd0acffd76195.ctex"
+uid="uid://c62qan2pw6fbn"
+path="res://.godot/imported/Kamien_.png-4d426238b1378993218e772049383eef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/zwierzatka/Gacek.png"
-dest_files=["res://.godot/imported/Gacek.png-01f6765b8ed9161eb7fbd0acffd76195.ctex"]
+source_file="res://Assets/Sprites/kamien/Kamien_.png"
+dest_files=["res://.godot/imported/Kamien_.png-4d426238b1378993218e772049383eef.ctex"]
 
 [params]
 
