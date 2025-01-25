@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cphod0ydvo8ke"]
+
+[ext_resource type="Script" path="res://Scripts/shield_bubble.gd" id="1_miaed"]
+[ext_resource type="Texture2D" uid="uid://dtnhi7rhpfs5t" path="res://icon.svg" id="2_0uph5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3fmv0"]
+size = Vector2(126.572, 127.279)
+
+[node name="ShieldBubble" type="Node2D"]
+script = ExtResource("1_miaed")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.870919, 0.45838, 0.550136, 1)
+rotation = 0.785398
+texture = ExtResource("2_0uph5")
+
+[node name="CollectionArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectionArea"]
+position = Vector2(0.249999, 0.25)
+rotation = 0.785398
+shape = SubResource("RectangleShape2D_3fmv0")
+
+[connection signal="body_entered" from="CollectionArea" to="." method="_on_collection_area_body_entered"]
