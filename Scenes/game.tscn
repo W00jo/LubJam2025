@@ -1,14 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://c0r23lm2xyl01"]
+[gd_scene load_steps=4 format=3 uid="uid://c0r23lm2xyl01"]
 
+[ext_resource type="Script" path="res://Scripts/level.gd" id="1_87dlu"]
 [ext_resource type="PackedScene" uid="uid://31sgm2m6coed" path="res://Scenes/bubble_guy.tscn" id="1_k043y"]
 [ext_resource type="PackedScene" uid="uid://gvfdf4fim2n0" path="res://Scenes/dolphin.tscn" id="2_a4dgr"]
 
 [node name="Game" type="Node"]
 
 [node name="Level" type="Node2D" parent="."]
+script = ExtResource("1_87dlu")
 
 [node name="BubbleGuy" parent="Level" instance=ExtResource("1_k043y")]
 position = Vector2(810, 267)
 
 [node name="Delfin" parent="Level" instance=ExtResource("2_a4dgr")]
 position = Vector2(271, 509)
+
+[node name="Camera2D" type="Camera2D" parent="Level"]
+position = Vector2(576, 324)
