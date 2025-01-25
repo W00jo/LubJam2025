@@ -5,6 +5,7 @@ extends Node2D
 @onready var bullet = preload("res://Scenes/bullet.tscn")
 
 
+
 func _process(delta: float) -> void:
 	look_at(get_global_mouse_position())
 	
@@ -17,11 +18,14 @@ func _process(delta: float) -> void:
 func _input(event: InputEvent) -> void:
 	if (event is InputEventMouseButton && event.is_action_released("Shoot")):
 		aim_line.clear_points()
-		var new_bullet = bullet.instantiate()
-		get_tree().root.add_child(new_bullet)
-		new_bullet.global_position = bullet_spawn.global_position
-		new_bullet.rotation = rotation
+		if Global.has_bullet == true:
+			var new_bullet = bullet.instantiate()
+			get_tree().root.add_child(new_bullet)
+			new_bullet.global_position = bullet_spawn.global_position
+			new_bullet.rotation = rotation
+			Global.has_bullet = false
 	
 	if event.is_action_pressed("Shoot"):
-		aim_line.add_point(aim_line.position, 0)
-		aim_line.add_point(get_global_mouse_position()*10, 1)
+		if Global.has_bullet == true:
+			aim_line.add_point(aim_line.position, 0)
+			aim_line.add_point(get_global_mouse_position()*10, 1)
