@@ -4,7 +4,7 @@ extends Node2D
 
 var is_falling: bool = false #jeśli aktualnie spada
 
-@onready var killbox = $Killboxa
+@onready var killbox = $Killbox
 @onready var trigger_area = $TriggerArea
 @onready var self_destruct_timer = $SelfDestructTimer #żeby nie spadał nieskończoną ilość czasu
 
