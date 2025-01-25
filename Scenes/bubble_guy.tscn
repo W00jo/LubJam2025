@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://Scripts/bubble_guy.gd" id="1_v53aw"]
 
 [node name="BubbleGuy" type="CharacterBody2D"]
+collision_mask = 15
 script = ExtResource("1_v53aw")
 
 [node name="Bubble" type="CharacterBody2D" parent="."]
