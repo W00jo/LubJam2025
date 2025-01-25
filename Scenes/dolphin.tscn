@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://gvfdf4fim2n0"]
 
-[ext_resource type="Texture2D" uid="uid://dtnhi7rhpfs5t" path="res://icon.svg" id="1_3kicy"]
 [ext_resource type="Script" path="res://Scripts/delfin.gd" id="1_lv03r"]
+[ext_resource type="Texture2D" uid="uid://b40jqxf5c62ri" path="res://Assets/Sprites/Delphin/DelfinKuku-Sheet.png" id="2_55x06"]
 [ext_resource type="PackedScene" uid="uid://mfdivfgj3c33" path="res://Scenes/dolphin_arm.tscn" id="3_acdta"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vpw6w"]
@@ -12,9 +12,9 @@ collision_mask = 14
 script = ExtResource("1_lv03r")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(0, 0, 0.72549, 1)
-scale = Vector2(2.5, 0.5)
-texture = ExtResource("1_3kicy")
+texture = ExtResource("2_55x06")
+hframes = 48
+vframes = 5
 
 [node name="DolphinArm" parent="." instance=ExtResource("3_acdta")]
 position = Vector2(1, -3)
