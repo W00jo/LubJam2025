@@ -31,3 +31,5 @@ texture = ExtResource("1_pnojc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldArea"]
 shape = SubResource("CapsuleShape2D_2hfaa")
+
+[connection signal="area_entered" from="ShieldArea" to="." method="_on_shield_area_area_entered"]

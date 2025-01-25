@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream
 uid="uid://d2xpctuvschdq"
+=======
+uid="uid://c47iyio24ee4p"
+>>>>>>> Stashed changes
 path="res://.godot/imported/StojcyDelfin.png-bb8b5e30f84b42a8355c8f9c9aa858a8.ctex"
 metadata={
 "vram_texture": false
