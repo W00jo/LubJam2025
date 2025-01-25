@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-@export var speed = 400
 
 func _physics_process(delta: float) -> void:
+	var speed = Global.dolphin_speed
 	var direction = Input.get_vector("DolphinLeft", "DolphinRight", "DolphinUp", "DolphinDown").normalized()
 	if direction:
 		velocity = direction * speed
