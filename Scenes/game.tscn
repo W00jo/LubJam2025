@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://c0r23lm2xyl01"]
+[gd_scene load_steps=10 format=3 uid="uid://c0r23lm2xyl01"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_87dlu"]
 [ext_resource type="PackedScene" uid="uid://31sgm2m6coed" path="res://Scenes/bubble_guy.tscn" id="1_k043y"]
@@ -6,7 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://48io4jtiaj5t" path="res://Scenes/falling_rock.tscn" id="4_mro6d"]
 [ext_resource type="PackedScene" uid="uid://yuv1d10akw2h" path="res://Scenes/collectible_bullet.tscn" id="5_38l20"]
 [ext_resource type="PackedScene" uid="uid://d3jkfuc0bhhh0" path="res://Scenes/stinky_bubble.tscn" id="6_lt1nt"]
-[ext_resource type="PackedScene" uid="uid://brsj11mvkc6fj" path="res://Scenes/side.tscn" id="7_lj3i0"]
+[ext_resource type="PackedScene" path="res://Scenes/side.tscn" id="7_lj3i0"]
+[ext_resource type="PackedScene" uid="uid://cphod0ydvo8ke" path="res://Scenes/shield_bubble.tscn" id="7_onk6k"]
+[ext_resource type="Texture2D" uid="uid://kx0sfnijfcy3" path="res://Assets/Sprites/tło/Mapa1.png" id="9_logh1"]
 
 [node name="Game" type="Node"]
 
@@ -32,3 +34,10 @@ position = Vector2(1073, 540)
 position = Vector2(871, 543)
 
 [node name="Side" parent="Level" instance=ExtResource("7_lj3i0")]
+
+[node name="ShieldBubble" parent="." instance=ExtResource("7_onk6k")]
+position = Vector2(1199, 292)
+
+[node name="Mapa1" type="Sprite2D" parent="."]
+position = Vector2(1015, 357)
+texture = ExtResource("9_logh1")
