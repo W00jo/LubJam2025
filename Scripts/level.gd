@@ -4,5 +4,5 @@ extends Node2D
 
 var speed = 150
 
-func _process(delta: float) -> void:
-	camera.position += camera.transform.x * speed * delta
+#func _process(delta: float) -> void:
+	#camera.position += camera.transform.x * speed * delta

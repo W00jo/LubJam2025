@@ -4,5 +4,8 @@ extends CharacterBody2D
 
 func _physics_process(delta: float) -> void:
 	var direction = Input.get_vector("DolphinLeft", "DolphinRight", "DolphinUp", "DolphinDown").normalized()
-	velocity = direction * speed
+	if direction:
+		velocity = direction * speed
+	else:
+		velocity = velocity * 0.97
 	move_and_slide()
