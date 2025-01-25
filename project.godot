@@ -21,6 +21,7 @@ project/assembly_name="Bubble"
 [global_group]
 
 Dolphin=""
+BubbleGuy=""
 
 [input]
 

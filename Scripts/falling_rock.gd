@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var fall_speed: float = 100.0  #prędkość spadania obiektu
+@export var fall_speed: float = 350.0  #prędkość spadania obiektu
 
 var is_falling: bool = false #jeśli aktualnie spada
 
@@ -13,8 +13,8 @@ func _physics_process(delta: float) -> void:
 		global_position.y += fall_speed * delta
 		
 func _on_trigger_area_body_entered(body: Node2D) -> void:
-	if body.is_in_group("Dolphin"):
-		print("Wykryty delfin. Leciii...")
+	if body.is_in_group("BubbleGuy"):
+		print("Wykryty chłop. Leciii...")
 		is_falling = true
 		self_destruct_timer.start()
 		

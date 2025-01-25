@@ -1,10 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://31sgm2m6coed"]
+[gd_scene load_steps=4 format=3 uid="uid://31sgm2m6coed"]
 
 [ext_resource type="Texture2D" uid="uid://dtnhi7rhpfs5t" path="res://icon.svg" id="1_pnojc"]
 [ext_resource type="Script" path="res://Scripts/bubble_guy.gd" id="1_v53aw"]
 
-[node name="BubbleGuy" type="CharacterBody2D"]
-collision_mask = 15
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4iesc"]
+size = Vector2(78, 75)
+
+[node name="BubbleGuy" type="CharacterBody2D" groups=["BubbleGuy"]]
+collision_mask = 14
 script = ExtResource("1_v53aw")
 
 [node name="Bubble" type="CharacterBody2D" parent="."]
@@ -17,3 +20,7 @@ texture = ExtResource("1_pnojc")
 modulate = Color(1, 0.290196, 1, 1)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_pnojc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_4iesc")
