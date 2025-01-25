@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://31sgm2m6coed" path="res://Scenes/bubble_guy.tscn" id="1_k043y"]
 [ext_resource type="PackedScene" uid="uid://gvfdf4fim2n0" path="res://Scenes/dolphin.tscn" id="2_a4dgr"]
 [ext_resource type="PackedScene" uid="uid://48io4jtiaj5t" path="res://Scenes/falling_rock.tscn" id="4_mro6d"]
-[ext_resource type="PackedScene" uid="uid://ctu8bm1de8j4e" path="res://Scenes/collectible_bullet.tscn" id="5_imrqr"]
+[ext_resource type="PackedScene" uid="uid://b65wpd1gb23wf" path="res://Scenes/collectible_bullet.tscn" id="5_7uuji"]
 
 [node name="Game" type="Node"]
 
@@ -23,5 +23,5 @@ position = Vector2(576, 324)
 [node name="FallingRock" parent="Level" instance=ExtResource("4_mro6d")]
 position = Vector2(642, 128)
 
-[node name="CollectibleBullet" parent="." instance=ExtResource("5_imrqr")]
-position = Vector2(1166, 533)
+[node name="CollectibleBullet" parent="Level" instance=ExtResource("5_7uuji")]
+position = Vector2(1173, 559)

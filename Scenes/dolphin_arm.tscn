@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://mfdivfgj3c33"]
+[gd_scene load_steps=4 format=3 uid="uid://mfdivfgj3c33"]
 
 [ext_resource type="Script" path="res://Scripts/dolphin_arm.gd" id="1_5x7uu"]
 [ext_resource type="Texture2D" uid="uid://dtnhi7rhpfs5t" path="res://icon.svg" id="2_c4r3k"]
+
+[sub_resource type="Gradient" id="Gradient_kgtv5"]
+offsets = PackedFloat32Array(0, 0.846667)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
 
 [node name="DolphinArm" type="Node2D"]
 script = ExtResource("1_5x7uu")
@@ -10,9 +14,9 @@ script = ExtResource("1_5x7uu")
 position = Vector2(93, -100)
 
 [node name="Line2D" type="Line2D" parent="."]
-position = Vector2(39, -47)
-rotation = -0.349066
+position = Vector2(38, -50)
 default_color = Color(1, 1, 1, 0.709804)
+gradient = SubResource("Gradient_kgtv5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(21.2, -65.2)
