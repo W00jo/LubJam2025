@@ -8,7 +8,7 @@ var guy_dead: bool = false
 var dolphin_dead: bool = false
 
 var guy_speed = 380
-var dolphin_speed = 350
+var dolphin_speed = 370
 
 
 func end_of_game():

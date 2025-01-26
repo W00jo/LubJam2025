@@ -26,6 +26,7 @@ position = Vector2(810, 267)
 
 [node name="Delfin" parent="Level" instance=ExtResource("2_a4dgr")]
 position = Vector2(271, 509)
+scale = Vector2(2, 2)
 
 [node name="Camera2D" type="Camera2D" parent="Level"]
 position = Vector2(960, 540)
