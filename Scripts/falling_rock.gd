@@ -8,6 +8,8 @@ var is_falling: bool = false # Jeśli aktualnie spada
 @onready var trigger_area = $TriggerArea
 @onready var self_destruct_timer = $SelfDestructTimer # Żeby nie spadał nieskończoną ilość czasu
 
+signal bump_kill
+
 func _physics_process(delta: float) -> void:
 	if is_falling:
 		global_position.y += fall_speed * delta
@@ -22,11 +24,11 @@ func _on_trigger_area_body_entered(body: Node2D) -> void:
 # Funkcja wykrywająca delfina i nabijająca mu guza
 func _on_killbox_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Dolphin"):
-		Global.dolphin_speed = 300
+		Global.dolphin_dead = true
+		bump_kill.emit()
 		print("Guzior nabity!")
 		
 # Funkcja znikająca kamień, po jego upadku
 func _on_self_destruct_timer_timeout() -> void:
 	print("Kaminia nima")
-	Global.dolphin_speed = 370
 	queue_free()

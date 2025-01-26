@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://xxoly3pcuwyn"]
+[gd_scene load_steps=2 format=3 uid="uid://bk7nkdcj7xens"]
 
-[ext_resource type="Texture2D" uid="uid://ios2o1d6alo2" path="res://Assets/Sprites/Background/floors.png" id="1_y6jeu"]
+[ext_resource type="Texture2D" uid="uid://dgrc3e7inga2k" path="res://Assets/Sprites/Background/floors.png" id="1_y6jeu"]
 
 [node name="Floors" type="StaticBody2D" groups=["Floor"]]
 collision_mask = 17
