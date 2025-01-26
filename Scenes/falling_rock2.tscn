@@ -1,21 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://48io4jtiaj5t"]
+[gd_scene load_steps=5 format=3 uid="uid://d2hdhjc07gxwj"]
 
-[ext_resource type="Script" path="res://Scripts/falling_rock.gd" id="1_t6kaa"]
-[ext_resource type="Texture2D" uid="uid://c61ldfb56t18n" path="res://Assets/Sprites/Interactive/stalamit2.png" id="2_b6gbf"]
+[ext_resource type="Script" path="res://Scripts/falling_rock.gd" id="1_cft5b"]
+[ext_resource type="Texture2D" uid="uid://byvlgc20olo3t" path="res://Assets/Sprites/Interactive/stalamit1.png" id="2_8opli"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8exj8"]
 size = Vector2(126, 462)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y3m7w"]
-size = Vector2(68, 192)
+size = Vector2(101, 180.5)
 
 [node name="FallingRock" type="Node2D"]
-script = ExtResource("1_t6kaa")
+script = ExtResource("1_cft5b")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(4, 29)
 scale = Vector2(4, 4)
-texture = ExtResource("2_b6gbf")
+texture = ExtResource("2_8opli")
 
 [node name="TriggerArea" type="Area2D" parent="."]
 collision_layer = 4
@@ -28,7 +28,7 @@ shape = SubResource("RectangleShape2D_8exj8")
 collision_layer = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox"]
-position = Vector2(7, 36)
+position = Vector2(-0.5, 22.75)
 shape = SubResource("RectangleShape2D_y3m7w")
 
 [node name="SelfDestructTimer" type="Timer" parent="."]
