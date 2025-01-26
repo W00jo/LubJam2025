@@ -1,8 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://bk7nkdcj7xens"]
+[gd_scene load_steps=2 format=3 uid="uid://xxoly3pcuwyn"]
 
-[ext_resource type="Texture2D" uid="uid://dgrc3e7inga2k" path="res://Assets/Sprites/Background/floors.png" id="1_y6jeu"]
+[ext_resource type="Texture2D" uid="uid://ol1dbip7vgud" path="res://Assets/Sprites/Background/floors.png" id="1_y6jeu"]
 
-[node name="Floors" type="StaticBody2D"]
+[node name="Floors" type="StaticBody2D" groups=["Floor"]]
+collision_mask = 17
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(11520, 540)
