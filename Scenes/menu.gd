@@ -21,3 +21,6 @@ func _on_exit_pressed() -> void:
 
 func remove_splash():
 	canvas.queue_free()
+
+func remove_conductors():
+	$CanvasLayer2.queue_free()
