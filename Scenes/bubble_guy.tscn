@@ -1,7 +1,7 @@
 [gd_scene load_steps=53 format=3 uid="uid://31sgm2m6coed"]
 
 [ext_resource type="Script" path="res://Scripts/bubble_guy.gd" id="1_v53aw"]
-[ext_resource type="Texture2D" uid="uid://be6a1lrdmrnno" path="res://Assets/Sprites/Characters/Bubble-Sheet.png" id="3_3im20"]
+[ext_resource type="Texture2D" uid="uid://nu8hd5rsgbt4" path="res://Assets/Sprites/Characters/Bubble-Sheet.png" id="3_3im20"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fln30"]
 radius = 59.357
@@ -373,7 +373,7 @@ states/Swimming_NoAir_1/position = Vector2(838, 189)
 states/Swimming_NoAir_2/node = SubResource("AnimationNodeAnimation_d26oj")
 states/Swimming_NoAir_2/position = Vector2(1064, 224)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_14yks"), "Idle", "Swimming_Bubble", SubResource("AnimationNodeStateMachineTransition_e7mj1"), "Swimming_Bubble", "Breaking_Bubble", SubResource("AnimationNodeStateMachineTransition_86ray"), "Idle", "Breaking_Bubble", SubResource("AnimationNodeStateMachineTransition_ebylw"), "Breaking_Bubble", "Idle_NoBubble", SubResource("AnimationNodeStateMachineTransition_7nbyq"), "Breaking_Bubble", "Swimming_NoAir_1", SubResource("AnimationNodeStateMachineTransition_bwavo"), "Idle_NoBubble", "Swimming_NoAir_1", SubResource("AnimationNodeStateMachineTransition_rxqro"), "Idle_NoBubble", "Idle_noBubbles_2", SubResource("AnimationNodeStateMachineTransition_0n24s"), "Swimming_Bubble", "Idle", SubResource("AnimationNodeStateMachineTransition_tr1xi"), "New_Bubble", "Idle", SubResource("AnimationNodeStateMachineTransition_opncu"), "New_Bubble", "Swimming_Bubble", SubResource("AnimationNodeStateMachineTransition_emkq4"), "Swimming_NoAir_1", "New_Bubble", SubResource("AnimationNodeStateMachineTransition_efgjt"), "Idle_noBubbles_2", "New_Bubble", SubResource("AnimationNodeStateMachineTransition_wihbq"), "Idle_noBubbles_2", "Swimming_NoAir_2", SubResource("AnimationNodeStateMachineTransition_mccmj"), "Swimming_NoAir_1", "Swimming_NoAir_2", SubResource("AnimationNodeStateMachineTransition_cmxwy"), "Swimming_NoAir_2", "New_Bubble", SubResource("AnimationNodeStateMachineTransition_ef62n"), "Idle_NoBubble", "New_Bubble", SubResource("AnimationNodeStateMachineTransition_arhkk"), "Swimming_NoAir_1", "Idle_NoBubble", SubResource("AnimationNodeStateMachineTransition_vfvif"), "Swimming_NoAir_2", "Idle_noBubbles_2", SubResource("AnimationNodeStateMachineTransition_wccvf"), "Idle_noBubbles_2", "Death_No_Air", SubResource("AnimationNodeStateMachineTransition_7lbv3"), "Swimming_NoAir_2", "Death_No_Air", SubResource("AnimationNodeStateMachineTransition_njkd4"), "Idle_NoBubble", "Death_Dart", SubResource("AnimationNodeStateMachineTransition_ctr4q"), "Idle_noBubbles_2", "Death_Dart", SubResource("AnimationNodeStateMachineTransition_pflv1"), "Swimming_NoAir_2", "Death_Dart", SubResource("AnimationNodeStateMachineTransition_kl5lm"), "Swimming_NoAir_1", "Death_Dart", SubResource("AnimationNodeStateMachineTransition_xw475")]
-graph_offset = Vector2(108, -52)
+graph_offset = Vector2(51, -52)
 
 [node name="BubbleGuy" type="CharacterBody2D" groups=["BubbleGuy"]]
 collision_mask = 15
@@ -408,7 +408,7 @@ parameters/conditions/Close_To_Death = false
 parameters/conditions/Death = false
 parameters/conditions/Death_NoAir = false
 parameters/conditions/Get_Bubble = false
-parameters/conditions/Idle = true
+parameters/conditions/Idle = false
 parameters/conditions/Swim = false
 
 [connection signal="area_entered" from="ShieldArea" to="." method="_on_shield_area_area_entered"]
