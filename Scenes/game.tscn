@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c0r23lm2xyl01"]
+[gd_scene load_steps=12 format=3 uid="uid://c0r23lm2xyl01"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_87dlu"]
 [ext_resource type="PackedScene" uid="uid://31sgm2m6coed" path="res://Scenes/bubble_guy.tscn" id="1_k043y"]
@@ -9,10 +9,14 @@
 [ext_resource type="PackedScene" uid="uid://d3jkfuc0bhhh0" path="res://Scenes/stinky_bubble.tscn" id="6_lt1nt"]
 [ext_resource type="PackedScene" uid="uid://brsj11mvkc6fj" path="res://Scenes/side.tscn" id="7_lj3i0"]
 [ext_resource type="PackedScene" uid="uid://cphod0ydvo8ke" path="res://Scenes/shield_bubble.tscn" id="8_odn0u"]
+[ext_resource type="PackedScene" uid="uid://c10e4kd8e6o3g" path="res://Scenes/menu.tscn" id="10_2t82o"]
+[ext_resource type="PackedScene" uid="uid://bcyrah88k0iba" path="res://Scenes/instructions.tscn" id="11_8dwh7"]
 
 [node name="Game" type="Node"]
+process_mode = 3
 
 [node name="Level" type="Node2D" parent="."]
+process_mode = 1
 script = ExtResource("1_87dlu")
 
 [node name="ParallaxBackground" parent="Level" instance=ExtResource("2_telu0")]
@@ -39,3 +43,14 @@ position = Vector2(871, 543)
 position = Vector2(1192, 194)
 
 [node name="Side" parent="Level" instance=ExtResource("7_lj3i0")]
+
+[node name="MenuLayer" type="CanvasLayer" parent="."]
+process_mode = 3
+
+[node name="Menu" parent="MenuLayer" instance=ExtResource("10_2t82o")]
+
+[node name="InstructionLayer" type="CanvasLayer" parent="."]
+process_mode = 3
+visible = false
+
+[node name="Instructions" parent="InstructionLayer" instance=ExtResource("11_8dwh7")]

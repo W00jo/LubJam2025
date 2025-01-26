@@ -1,12 +1,12 @@
-[gd_scene load_steps=16 format=3 uid="uid://c10e4kd8e6o3g"]
+[gd_scene load_steps=19 format=3 uid="uid://c10e4kd8e6o3g"]
 
 [ext_resource type="Texture2D" uid="uid://cqw6qhg0vrs1y" path="res://Assets/Sprites/Menu/menu-shiit.png" id="1_els47"]
+[ext_resource type="Script" path="res://Scenes/menu.gd" id="1_id2h2"]
 [ext_resource type="Texture2D" uid="uid://cvstk77ddm73v" path="res://Assets/Sprites/Menu/kupseplej.png" id="2_iuo1g"]
-[ext_resource type="Script" path="res://Scripts/play.gd" id="3_hi3s8"]
 [ext_resource type="Texture2D" uid="uid://c223hsm26jhyp" path="res://Assets/Sprites/Menu/optionst_button.png" id="3_je75w"]
 [ext_resource type="Texture2D" uid="uid://daq5chamiq5k3" path="res://Assets/Sprites/Menu/kredytstzaufania.png" id="4_xysjh"]
 [ext_resource type="Texture2D" uid="uid://cekx26xo3xjx" path="res://Assets/Sprites/Menu/exit_button.png" id="5_2rcsb"]
-[ext_resource type="Script" path="res://Scripts/exit.gd" id="7_651wj"]
+[ext_resource type="Texture2D" uid="uid://bocoiwnmgtkq2" path="res://Assets/Sprites/Menu/temp_splash.png" id="7_nfpl3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qmbak"]
 atlas = ExtResource("1_els47")
@@ -65,6 +65,57 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Animation" id="Animation_nfqib"]
+resource_name = "splashscreen_fadeout"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(2.96667),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"remove_splash"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_7qceo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6xsbt"]
+_data = {
+"RESET": SubResource("Animation_7qceo"),
+"splashscreen_fadeout": SubResource("Animation_nfqib")
+}
+
 [node name="Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -72,12 +123,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_id2h2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(960, 540)
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_1gymj")
 autoplay = "default"
+frame = 1
+frame_progress = 0.390111
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 0
@@ -93,7 +147,6 @@ layout_mode = 2
 [node name="Play" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 icon = ExtResource("2_iuo1g")
-script = ExtResource("3_hi3s8")
 
 [node name="Options" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
@@ -107,7 +160,22 @@ icon = ExtResource("4_xysjh")
 [node name="Exit" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 icon = ExtResource("5_2rcsb")
-script = ExtResource("7_651wj")
 
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Play" to="CenterContainer/VBoxContainer/Play" method="_on_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Exit" to="CenterContainer/VBoxContainer/Exit" method="_on_pressed"]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_nfpl3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_6xsbt")
+}
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]
