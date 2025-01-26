@@ -6,22 +6,26 @@
 collision_mask = 17
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(19202, 540)
+position = Vector2(20162, 540)
 scale = Vector2(4, 4)
 texture = ExtResource("1_y6jeu")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(0, 1, 0, 120, 26, 63, 64, 57, 320, 48, 1026, 103, 1423, 32, 1779, 84, 1970, 56, 2281, 51, 2960, 86, 3359, 27, 3708, 74, 4168, 42, 4861, 101, 5265, 25, 5658, 69, 5780, 29, 6695, 371, 7009, 427, 7327, 588, 7648, 581, 8072, 588, 8162, 557, 9011, 576, 9364, 542, 9846, 600, 10025, 564, 10161, 473, 10321, 416, 10686, 348, 11476, 33, 11549, 60, 11835, 47, 12559, 93, 12939, 30, 13271, 89, 13477, 61, 13757, 38, 14460, 99, 14893, 23, 15229, 85, 15402, 56, 15681, 46, 16297, 92, 16477, 91, 16765, 25, 17163, 88, 17296, 34, 17752, 197, 18152, 349, 18500, 413, 18800, 567, 18951, 599, 19240, 571, 19571, 596, 19662, 545, 19749, 545, 19800, 451, 20252, 465, 20605, 452, 20744, 550, 20894, 555, 21349, 597, 21456, 594, 21612, 543, 22217, 561, 22704, 529, 23342, 577, 23591, 478, 23772, 385, 23962, 341, 24061, 382, 24172, 472, 24201, 390, 24236, 289, 24344, 245, 24665, 111, 24897, 20, 24956, 54, 25037, 30, 25339, 42, 25620, 50, 25900, 71, 26286, 32, 26474, 29, 26701, 67, 26884, 40, 27017, 73, 27128, 58, 27315, 26, 27574, 37, 27798, 72, 28033, 67, 28256, 50, 28434, 33, 28723, 39, 28810, 54, 28868, 37, 29853, 69, 29918, 51, 30127, 31, 30244, 18, 30357, 37, 30417, 38, 30501, 71, 30602, 66, 30692, 33, 30771, 27, 30843, 44, 31135, 161, 31598, 337, 31909, 402, 32226, 537, 32371, 589, 32515, 573, 32663, 558, 32990, 583, 33070, 552, 33168, 554, 33471, 561, 33802, 566, 34021, 548, 34295, 533, 34361, 553, 34578, 567, 34894, 580, 34988, 511, 35048, 445, 35080, 547, 35191, 555, 35253, 548, 35292, 530, 35355, 506, 35406, 521, 35450, 561, 35540, 566, 35634, 559, 35694, 527, 35737, 493, 35767, 441, 35830, 418, 35974, 503, 36069, 537, 36234, 533, 36441, 561, 36635, 558, 36799, 574, 36878, 542, 37091, 294, 37233, 0)
+polygon = PackedVector2Array(0, 1, 0, 120, 26, 63, 64, 57, 320, 48, 1026, 103, 1423, 32, 1779, 84, 1970, 56, 2281, 51, 2960, 86, 3359, 27, 3708, 74, 4168, 42, 4861, 101, 5265, 25, 5658, 69, 5780, 29, 6695, 371, 7009, 427, 7327, 588, 7648, 581, 8072, 588, 8162, 557, 9011, 576, 9364, 542, 9846, 600, 10025, 564, 10161, 473, 10321, 416, 10686, 348, 11476, 33, 11549, 60, 11835, 47, 12559, 93, 12939, 30, 13271, 89, 13477, 61, 13757, 38, 14460, 99, 14893, 23, 15229, 85, 15402, 56, 15681, 46, 16297, 92, 16477, 91, 16765, 25, 16900, 24, 17163, 88, 17296, 34, 17752, 197, 18152, 349, 18500, 413, 18800, 567, 18951, 599, 19240, 571, 19571, 596, 19662, 545, 19749, 545, 19800, 451, 20252, 465, 20605, 452, 20744, 550, 20894, 555, 21349, 597, 21456, 594, 21612, 543, 22217, 561, 22704, 529, 23342, 577, 23591, 478, 23772, 385, 23962, 341, 24061, 382, 24172, 472, 24201, 390, 24236, 289, 24344, 245, 24665, 111, 24897, 20, 24956, 54, 25037, 30, 25339, 42, 25620, 50, 25900, 71, 26286, 32, 26474, 29, 26701, 67, 26884, 40, 27017, 73, 27128, 58, 27315, 26, 27574, 37, 27798, 72, 28033, 67, 28256, 50, 28434, 33, 28723, 39, 28810, 54, 28868, 37, 29853, 69, 29918, 51, 30127, 31, 30244, 18, 30357, 37, 30417, 38, 30501, 71, 30602, 66, 30692, 33, 30771, 27, 30843, 44, 31135, 161, 31598, 337, 31909, 402, 32226, 537, 32371, 589, 32515, 573, 32663, 558, 32990, 583, 33070, 552, 33168, 554, 33471, 561, 33802, 566, 34021, 548, 34295, 533, 34361, 553, 34578, 567, 34894, 580, 34988, 511, 35048, 445, 35080, 547, 35191, 555, 35253, 548, 35292, 530, 35355, 506, 35406, 521, 35450, 561, 35540, 566, 35634, 559, 35694, 527, 35737, 493, 35767, 441, 35830, 418, 35974, 503, 36069, 537, 36234, 533, 36441, 561, 36635, 558, 36799, 574, 36878, 542, 37091, 294, 37215, 18, 37915, 19, 37915, -1)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(0, 1079, 2, 826, 355, 795, 478, 851, 1108, 811, 1599, 879, 1730, 842, 2289, 799, 2406, 851, 2991, 806, 3394, 871, 3593, 884, 3672, 846, 4208, 803, 4324, 866, 5010, 805, 5490, 867, 5593, 837, 5785, 837, 5896, 892, 6627, 1055, 6807, 1048, 7027, 1003, 7195, 1066, 7568, 1011, 7694, 1044, 8636, 1024, 9123, 1051, 9463, 1023, 9611, 1048, 9777, 1002, 10098, 1061, 10261, 1007, 10609, 1064, 10934, 1019, 11443, 899, 11488, 829, 11874, 802, 11975, 865, 12665, 814, 13149, 879, 13281, 824, 13798, 801, 13909, 848, 14607, 810, 15081, 875, 15182, 838, 15722, 798, 15839, 856, 16324, 809, 16692, 837, 17009, 885, 17091, 831, 17308, 828, 17381, 893, 18136, 1070, 18481, 1004, 18658, 1049, 19010, 1016, 19178, 1037, 19526, 1047, 19787, 1026, 20303, 1036, 20609, 1055, 20991, 1019, 21135, 1036, 21282, 1040, 21624, 1042, 21788, 1041, 22106, 1022, 22263, 1031, 22679, 1048, 22995, 1023, 23048, 1053, 23082, 1041, 23219, 1023, 23358, 1039, 23503, 1065, 23624, 1041, 23722, 1031, 23838, 1033, 23941, 1061, 24251, 1057, 24434, 1011, 24661, 961, 24864, 917, 24938, 854, 25285, 823, 25352, 841, 25562, 866, 26162, 833, 26200, 594, 26173, 510, 26048, 499, 25916, 468, 25850, 418, 25882, 343, 26424, 254, 26802, 234, 27253, 233, 27565, 305, 27885, 344, 27922, 395, 27878, 470, 27594, 518, 27554, 665, 27626.1, 831.714, 27768, 830, 28026, 843, 28348, 854, 28480, 820, 28817, 837, 29001, 833, 29132, 821, 29208, 786, 29308, 843, 29446, 880, 29654, 899, 29809, 885, 29898, 909, 30093, 975, 30266, 956, 30403, 928, 30521, 866, 30748, 835, 30794, 891, 30982, 941, 31246, 1004, 31367.1, 1051.26, 31508, 1054, 31573.6, 1059.76, 31686, 1062, 31742, 1046, 31819, 1048, 31919.4, 1021.26, 32036, 1023, 32096, 1039, 32128, 1071, 32350, 1043, 32421, 1025, 32504, 1020, 32543, 1028, 32596, 1039, 33080, 1048, 33296, 1039, 33612, 1029, 33715, 1025, 33841.6, 1046.83, 34127, 1051, 34232, 1045, 34315, 1031, 34448, 1029, 34536, 1043, 34650, 1051, 34703, 1038, 34792, 970, 34828, 982, 34880, 993, 34973, 951, 35072, 947, 35092, 958, 35128, 1022, 35287, 1030, 35394, 981, 35461.9, 1030.68, 35665, 1033, 35769, 1051, 35844, 976, 35886, 967, 35999.4, 1049.15, 36149, 1051, 36357, 1036, 36462.4, 1047.59, 36835, 1052, 37221, 1036, 37505, 1034, 37576, 1042, 38007, 1054, 38238, 1027, 38367, 946, 38386, 799, 38362, 574, 38202, 540, 38033, 525, 38060, 365, 37971, 167, 37913, 1, 38403, -4, 38434, 1081, 23042, 1088)
+polygon = PackedVector2Array(0, 1079, 2, 826, 355, 795, 478, 851, 1108, 811, 1599, 879, 1730, 842, 2289, 799, 2406, 851, 2991, 806, 3394, 871, 3593, 884, 3672, 846, 4208, 803, 4324, 866, 5010, 805, 5490, 867, 5593, 837, 5785, 837, 5896, 892, 6627, 1055, 6807, 1048, 7027, 1003, 7195, 1066, 7568, 1011, 7694, 1044, 8636, 1024, 9123, 1051, 9463, 1023, 9611, 1048, 9777, 1002, 10098, 1061, 10261, 1007, 10609, 1064, 10934, 1019, 11443, 899, 11488, 829, 11874, 802, 11975, 865, 12665, 814, 13149, 879, 13281, 824, 13798, 801, 13909, 848, 14607, 810, 15081, 875, 15182, 838, 15722, 798, 15839, 856, 16324, 809, 16692, 837, 17009, 885, 17091, 831, 17308, 828, 17381, 893, 18136, 1070, 18481, 1004, 18658, 1049, 19010, 1016, 19178, 1037, 19526, 1047, 19787, 1026, 20303, 1036, 20609, 1055, 20991, 1019, 21135, 1036, 21282, 1040, 21624, 1042, 21788, 1041, 22106, 1022, 22263, 1031, 22679, 1048, 22995, 1023, 23048, 1053, 23082, 1041, 23219, 1023, 23358, 1039, 23503, 1065, 23624, 1041, 23722, 1031, 23838, 1033, 23941, 1061, 24251, 1057, 24434, 1011, 24661, 961, 24864, 917, 24938, 854, 25285, 823, 25352, 841, 25562, 866, 26162, 833, 26200, 594, 26173, 510, 26048, 499, 25916, 468, 25850, 418, 25898, 396, 26043, 411, 26190, 385, 26427, 380, 26736, 446, 26962, 481, 27185, 451, 27319, 416, 27432, 460, 27542, 463, 27685, 395, 27810, 347, 27885, 344, 27922, 395, 27878, 470, 27594, 518, 27554, 665, 27626.1, 831.714, 27768, 830, 28026, 843, 28348, 854, 28480, 820, 28817, 837, 29001, 833, 29132, 821, 29208, 786, 29308, 843, 29446, 880, 29654, 899, 29809, 885, 29898, 909, 30093, 975, 30266, 956, 30403, 928, 30521, 866, 30748, 835, 30794, 891, 30982, 941, 31246, 1004, 31367.1, 1051.26, 31508, 1054, 31573.6, 1059.76, 31686, 1062, 31742, 1046, 31819, 1048, 31919.4, 1021.26, 32036, 1023, 32096, 1039, 32128, 1071, 32350, 1043, 32421, 1025, 32504, 1020, 32543, 1028, 32596, 1039, 33080, 1048, 33296, 1039, 33612, 1029, 33715, 1025, 33841.6, 1046.83, 34127, 1051, 34232, 1045, 34315, 1031, 34448, 1029, 34536, 1043, 34650, 1051, 34703, 1038, 34792, 970, 34828, 982, 34880, 993, 34973, 951, 35072, 947, 35092, 958, 35128, 1022, 35287, 1030, 35394, 981, 35461.9, 1030.68, 35665, 1033, 35769, 1051, 35844, 976, 35886, 967, 35999.4, 1049.15, 36149, 1051, 36357, 1036, 36462.4, 1047.59, 36835, 1052, 37221, 1036, 37505, 1034, 37576, 1042, 38007, 1054, 38238, 1027, 38367, 946, 38386, 799, 38362, 574, 38202, 540, 38033, 525, 38060, 365, 37971, 167, 37913, 1, 38403, -4, 38434, 1081, 23042, 1088)
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(2784, 411, 2809, 351, 2857, 316, 2944, 327, 3071, 299, 3215, 283, 3328, 248, 3492, 224, 3752, 225, 3964, 232, 4200, 229, 4380, 243, 4597, 304, 4788, 323, 4873, 318, 4943, 407, 4921, 485, 4837, 500, 4684, 531, 4564, 541, 4266, 489, 4111, 508, 3886, 547, 3772, 537, 3495, 488, 3388, 499, 3104, 536, 2983, 509, 2867, 482, 2801, 460)
+polygon = PackedVector2Array(2784, 411, 2809, 351, 2857, 316, 2944, 327, 3071, 299, 3215, 283, 3271, 290, 3324, 358, 3497, 404, 3713, 449, 3974, 397, 4188, 353, 4331, 361, 4455, 288, 4637, 338, 4794, 339, 4878, 326, 4943, 407, 4921, 485, 4837, 500, 4684, 531, 4564, 541, 4266, 489, 4111, 508, 3886, 547, 3772, 537, 3495, 488, 3388, 499, 3104, 536, 2983, 509, 2867, 482, 2801, 460)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="."]
+position = Vector2(16030, 364)
+polygon = PackedVector2Array(-207, -75, -77, -92, 113, -52, 237, -32, 323, -24, 388, -24, 424, 42, 416, 77, 338, 119, 282, 132, 212, 135, 167, 158, 69, 136, -30, 92, -122, 10, -187, -36, -232, -79)
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="."]
 position = Vector2(11523, 0)
-polygon = PackedVector2Array(2784, 411, 2809, 351, 2857, 316, 2944, 327, 3071, 299, 3215, 283, 3328, 248, 3492, 224, 3752, 225, 3964, 232, 4200, 229, 4380, 243, 4597, 304, 4788, 323, 4873, 318, 4943, 407, 4921, 485, 4837, 500, 4684, 531, 4564, 541, 4266, 489, 4111, 508, 3886, 547, 3772, 537, 3495, 488, 3388, 499, 3104, 536, 2983, 509, 2867, 482, 2801, 460)
+polygon = PackedVector2Array(2784, 411, 2809, 351, 2857, 316, 2944, 327, 3071, 299, 3215, 283, 3313, 310, 3438, 331, 3582, 356, 3707, 362, 3821, 364, 3920, 403, 4036, 494, 3804, 522, 3495, 488, 3388, 499, 3104, 536, 2983, 509, 2867, 482, 2801, 460)
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="."]
 position = Vector2(11932, 448)
@@ -34,3 +38,307 @@ polygon = PackedVector2Array(-2, -1, -480, -195, -513, -267, -639, -416, 1274, -
 [node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="."]
 position = Vector2(13265, 276)
 polygon = PackedVector2Array(109, -32, 183, -17, 236, -25, 291, 0, 301, 61, 279, 101, 210, 121, 149, 145, 107, 143, 55, 134, 10, 121, -55, 97, -73, 39, -59, -1, -27, -31, 26, -36)
+
+[node name="Spadanie" type="Node" parent="."]
+
+[node name="FallingObstacles" parent="Spadanie" instance=ExtResource("13_vs76o")]
+position = Vector2(2655, 174)
+
+[node name="FallingObstacles2" parent="Spadanie" instance=ExtResource("13_vs76o")]
+position = Vector2(6288, 354)
+
+[node name="FallingObstacles3" parent="Spadanie" instance=ExtResource("13_vs76o")]
+position = Vector2(9326, 662)
+
+[node name="FallingObstacles4" parent="Spadanie" instance=ExtResource("13_vs76o")]
+position = Vector2(19760, 645)
+
+[node name="FallingObstacles5" parent="Spadanie" instance=ExtResource("13_vs76o")]
+position = Vector2(21858, 652)
+
+[node name="FallingObstacles6" parent="Spadanie" instance=ExtResource("13_vs76o")]
+position = Vector2(22681, 637)
+
+[node name="FallingObstacles7" parent="Spadanie" instance=ExtResource("13_vs76o")]
+position = Vector2(23958, 480)
+
+[node name="FallingObstacles9" parent="Spadanie" instance=ExtResource("13_vs76o")]
+position = Vector2(34449, 663)
+
+[node name="FallingObstacles8" parent="Spadanie" instance=ExtResource("13_vs76o")]
+position = Vector2(22281, 662)
+
+[node name="Dmg" type="Node" parent="Spadanie"]
+
+[node name="FallingRock" parent="Spadanie/Dmg" instance=ExtResource("3_titvf")]
+position = Vector2(6936, 490)
+
+[node name="FallingRock3" parent="Spadanie/Dmg" instance=ExtResource("3_titvf")]
+position = Vector2(11583, 128)
+
+[node name="FallingRock4" parent="Spadanie/Dmg" instance=ExtResource("3_titvf")]
+position = Vector2(16826, 92)
+
+[node name="FallingRock5" parent="Spadanie/Dmg" instance=ExtResource("3_titvf")]
+position = Vector2(20469, 527)
+
+[node name="FallingRock2" parent="Spadanie/Dmg" instance=ExtResource("4_376lc")]
+position = Vector2(5286, 105)
+
+[node name="FallingRock6" parent="Spadanie/Dmg" instance=ExtResource("4_376lc")]
+position = Vector2(25153, 108)
+
+[node name="FallingRock7" parent="Spadanie/Dmg" instance=ExtResource("4_376lc")]
+position = Vector2(28521, 106)
+
+[node name="FallingRock8" parent="Spadanie/Dmg" instance=ExtResource("4_376lc")]
+position = Vector2(36194, 609)
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Gacek" type="Sprite2D" parent="Node"]
+position = Vector2(3040, 238)
+scale = Vector2(5.5, 5.5)
+texture = ExtResource("2_ut2kb")
+
+[node name="KosciDelfina" type="Sprite2D" parent="Node"]
+position = Vector2(26596, 769)
+scale = Vector2(8.3125, 8.3125)
+texture = ExtResource("3_j0pww")
+
+[node name="GlonSamotny2" type="Sprite2D" parent="Node"]
+position = Vector2(28734, 741)
+scale = Vector2(6.6875, 6.6875)
+texture = ExtResource("4_vcx2e")
+
+[node name="GlonZKolegamiTop" type="Sprite2D" parent="Node"]
+position = Vector2(25471, 747)
+scale = Vector2(6.24998, 6.24998)
+texture = ExtResource("5_a8w88")
+
+[node name="GlonSamotny3" type="Sprite2D" parent="Node"]
+position = Vector2(24790, 850)
+scale = Vector2(3.84374, 3.84374)
+texture = ExtResource("4_vcx2e")
+
+[node name="GlonSamotny4" type="Sprite2D" parent="Node"]
+position = Vector2(527, 770)
+scale = Vector2(6.5, 6.5)
+texture = ExtResource("4_vcx2e")
+
+[node name="Roslina3" type="Sprite2D" parent="Node"]
+position = Vector2(2480, 742)
+scale = Vector2(3.4375, 3.4375)
+texture = ExtResource("6_868fh")
+
+[node name="Roslina1" type="Sprite2D" parent="Node"]
+position = Vector2(1694, 760)
+scale = Vector2(4.25, 4.25)
+texture = ExtResource("7_jefci")
+
+[node name="GlonSamotny" type="Sprite2D" parent="Node"]
+position = Vector2(2410, 790)
+scale = Vector2(5, 5)
+texture = ExtResource("9_wlvd2")
+
+[node name="Kamien" type="Sprite2D" parent="Node"]
+position = Vector2(692, 805)
+rotation = -0.120428
+scale = Vector2(5.96875, 5.96875)
+texture = ExtResource("8_ukf71")
+
+[node name="Kamien2" type="Sprite2D" parent="Node"]
+position = Vector2(1852, 827)
+scale = Vector2(3.73438, 3.73438)
+texture = ExtResource("8_ukf71")
+
+[node name="Bublepachnace" type="Sprite2D" parent="Node"]
+position = Vector2(621, 626)
+scale = Vector2(5.5625, 5.5625)
+texture = ExtResource("10_em5yj")
+
+[node name="GlonSamotny2" type="Sprite2D" parent="."]
+position = Vector2(3926, 779)
+scale = Vector2(4.3125, 4.3125)
+texture = ExtResource("4_vcx2e")
+
+[node name="GlonZKolegamiTop" type="Sprite2D" parent="."]
+position = Vector2(3725, 356)
+scale = Vector2(4.46875, 4.46875)
+texture = ExtResource("5_a8w88")
+
+[node name="Roslina1" type="Sprite2D" parent="."]
+position = Vector2(5494, 766)
+scale = Vector2(4.8125, 4.8125)
+texture = ExtResource("7_jefci")
+
+[node name="Roslina3" type="Sprite2D" parent="."]
+position = Vector2(5596, 742)
+rotation = 6.28319
+scale = Vector2(3.04688, 3.04688)
+texture = ExtResource("6_868fh")
+
+[node name="GlonyNadnie" type="Sprite2D" parent="."]
+position = Vector2(8600, 939)
+texture = ExtResource("11_qqc3a")
+
+[node name="GlonyNadnie" type="Sprite2D" parent="GlonyNadnie"]
+position = Vector2(10254, -9)
+texture = ExtResource("11_qqc3a")
+
+[node name="GlonyNadnie2" type="Sprite2D" parent="GlonyNadnie"]
+position = Vector2(12136, -9)
+texture = ExtResource("11_qqc3a")
+
+[node name="Roslina4" type="Sprite2D" parent="."]
+position = Vector2(10644, 969)
+scale = Vector2(2.89063, 2.89063)
+texture = ExtResource("6_868fh")
+
+[node name="Roslina6" type="Sprite2D" parent="."]
+position = Vector2(10731, 996)
+rotation = 0.507891
+scale = Vector2(1.99217, 1.99217)
+texture = ExtResource("6_868fh")
+flip_h = true
+
+[node name="Gacek" type="Sprite2D" parent="."]
+position = Vector2(12038, 344)
+scale = Vector2(2.53125, 2.53125)
+texture = ExtResource("2_ut2kb")
+
+[node name="GlonSamotny3" type="Sprite2D" parent="."]
+position = Vector2(11987, 346)
+scale = Vector2(2.90625, 2.90625)
+texture = ExtResource("4_vcx2e")
+
+[node name="Roslina2" type="Sprite2D" parent="."]
+position = Vector2(10697, 993)
+scale = Vector2(2.98438, 2.98438)
+texture = ExtResource("7_jefci")
+
+[node name="KosciDelfina" type="Sprite2D" parent="."]
+position = Vector2(13362, 337)
+scale = Vector2(2.64063, 2.64063)
+texture = ExtResource("3_j0pww")
+
+[node name="GlonyNadnie2" type="Sprite2D" parent="."]
+position = Vector2(22617, 928)
+texture = ExtResource("11_qqc3a")
+
+[node name="GlonSamotny4" type="Sprite2D" parent="."]
+position = Vector2(30625, 782)
+scale = Vector2(5.92189, 5.92189)
+texture = ExtResource("9_wlvd2")
+
+[node name="GlonyNadnie3" type="Sprite2D" parent="."]
+position = Vector2(33529, 910)
+texture = ExtResource("11_qqc3a")
+
+[node name="GlonyNadnie4" type="Sprite2D" parent="."]
+position = Vector2(37127, 898)
+texture = ExtResource("11_qqc3a")
+
+[node name="GlonSamotny5" type="Sprite2D" parent="."]
+position = Vector2(35552, 984)
+scale = Vector2(3.15625, 3.15625)
+texture = ExtResource("4_vcx2e")
+
+[node name="GlonZKolegamiTop2" type="Sprite2D" parent="."]
+position = Vector2(35214, 980)
+scale = Vector2(3.03125, 3.03125)
+texture = ExtResource("5_a8w88")
+
+[node name="Kamien3" type="Sprite2D" parent="."]
+position = Vector2(35654, 1024)
+scale = Vector2(2.88273, 2.88273)
+texture = ExtResource("8_ukf71")
+
+[node name="Bublepachnace2" type="Sprite2D" parent="."]
+position = Vector2(30013, 225)
+scale = Vector2(4.25, 4.25)
+texture = ExtResource("10_em5yj")
+
+[node name="Kotwica" type="Sprite2D" parent="."]
+position = Vector2(30621, 950.001)
+rotation = -0.71733
+scale = Vector2(2.63785, 2.63785)
+texture = ExtResource("12_flonl")
+
+[node name="GlonSamotny6" type="Sprite2D" parent="."]
+position = Vector2(26975, 413)
+scale = Vector2(2.9375, 2.9375)
+texture = ExtResource("4_vcx2e")
+
+[node name="GlonSamotny7" type="Sprite2D" parent="."]
+position = Vector2(26904, 424)
+scale = Vector2(2.5625, 2.5625)
+texture = ExtResource("4_vcx2e")
+
+[node name="GlonSamotny8" type="Sprite2D" parent="."]
+position = Vector2(26839, 412)
+scale = Vector2(2.6875, 2.6875)
+texture = ExtResource("4_vcx2e")
+
+[node name="GlonSamotny9" type="Sprite2D" parent="."]
+position = Vector2(26890, 398)
+scale = Vector2(3.25, 3.25)
+texture = ExtResource("9_wlvd2")
+
+[node name="KosciDelfina2" type="Sprite2D" parent="."]
+position = Vector2(18988, 202)
+rotation = 0.23911
+scale = Vector2(3.58662, 3.87832)
+texture = ExtResource("3_j0pww")
+
+[node name="KosciDelfina3" type="Sprite2D" parent="."]
+position = Vector2(20408, 168)
+rotation = -0.6353
+scale = Vector2(2.125, 2.125)
+texture = ExtResource("3_j0pww")
+
+[node name="KosciDelfina4" type="Sprite2D" parent="."]
+position = Vector2(21882, 243)
+rotation = 3.11192
+scale = Vector2(2.95313, 2.95313)
+texture = ExtResource("3_j0pww")
+flip_v = true
+
+[node name="KosciDelfina5" type="Sprite2D" parent="."]
+position = Vector2(32887, 329)
+scale = Vector2(3.46875, 3.46875)
+texture = ExtResource("3_j0pww")
+flip_h = true
+
+[node name="Kotwica2" type="Sprite2D" parent="."]
+position = Vector2(38196, 913)
+rotation = -0.493928
+scale = Vector2(3.28125, 3.28125)
+texture = ExtResource("12_flonl")
+
+[node name="GlonSamotny10" type="Sprite2D" parent="."]
+position = Vector2(15059, 543)
+rotation = 3.11192
+scale = Vector2(3.78125, 3.78125)
+texture = ExtResource("4_vcx2e")
+
+[node name="Roslina5" type="Sprite2D" parent="."]
+position = Vector2(14564, 242)
+scale = Vector2(3.31249, 3.31249)
+texture = ExtResource("7_jefci")
+
+[node name="GlonyNadnie5" type="Sprite2D" parent="."]
+position = Vector2(13866, 735)
+texture = ExtResource("11_qqc3a")
+
+[node name="KosciDelfina6" type="Sprite2D" parent="."]
+position = Vector2(8760, 215)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("3_j0pww")
+flip_h = true
+
+[node name="KosciDelfina7" type="Sprite2D" parent="."]
+position = Vector2(8084, 384)
+rotation = 0.47822
+scale = Vector2(2.625, 2.625)
+texture = ExtResource("3_j0pww")
