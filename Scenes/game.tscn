@@ -54,6 +54,69 @@ position = Vector2(1192, 194)
 [node name="FallingRock2" parent="Level" instance=ExtResource("4_mro6d")]
 position = Vector2(2402, 182)
 
+[node name="CollectibleBullet2" parent="Level" instance=ExtResource("5_38l20")]
+position = Vector2(2895, 200)
+
+[node name="CollectibleBullet3" parent="Level" instance=ExtResource("5_38l20")]
+position = Vector2(5991, 826)
+
+[node name="CollectibleBullet4" parent="Level" instance=ExtResource("5_38l20")]
+position = Vector2(9098, 943)
+
+[node name="CollectibleBullet5" parent="Level" instance=ExtResource("5_38l20")]
+position = Vector2(11856, 327)
+
+[node name="CollectibleBullet6" parent="Level" instance=ExtResource("5_38l20")]
+position = Vector2(14353, 729)
+
+[node name="CollectibleBullet7" parent="Level" instance=ExtResource("5_38l20")]
+position = Vector2(15852, 172)
+
+[node name="CollectibleBullet8" parent="Level" instance=ExtResource("5_38l20")]
+position = Vector2(18525, 551)
+
+[node name="CollectibleBullet9" parent="Level" instance=ExtResource("5_38l20")]
+position = Vector2(20612, 574)
+
+[node name="CollectibleBullet10" parent="Level" instance=ExtResource("5_38l20")]
+position = Vector2(22071, 656)
+
+[node name="CollectibleBullet11" parent="Level" instance=ExtResource("5_38l20")]
+position = Vector2(25120, 741)
+
+[node name="CollectibleBullet12" parent="Level" instance=ExtResource("5_38l20")]
+position = Vector2(27733, 659)
+
+[node name="CollectibleBullet13" parent="Level" instance=ExtResource("5_38l20")]
+position = Vector2(29826, 549)
+
+[node name="CollectibleBullet14" parent="Level" instance=ExtResource("5_38l20")]
+position = Vector2(33030, 790)
+
+[node name="CollectibleBullet15" parent="Level" instance=ExtResource("5_38l20")]
+position = Vector2(34583, 948)
+
+[node name="ShieldBubble2" parent="Level" instance=ExtResource("8_odn0u")]
+position = Vector2(4719, 682)
+
+[node name="ShieldBubble3" parent="Level" instance=ExtResource("8_odn0u")]
+position = Vector2(10381, 560)
+
+[node name="ShieldBubble4" parent="Level" instance=ExtResource("8_odn0u")]
+position = Vector2(15132, 225)
+
+[node name="ShieldBubble5" parent="Level" instance=ExtResource("8_odn0u")]
+position = Vector2(20174, 938)
+
+[node name="ShieldBubble6" parent="Level" instance=ExtResource("8_odn0u")]
+position = Vector2(30945, 250)
+
+[node name="ShieldBubble8" parent="Level" instance=ExtResource("8_odn0u")]
+position = Vector2(34224, 945)
+
+[node name="ShieldBubble7" parent="Level" instance=ExtResource("8_odn0u")]
+position = Vector2(26051, 685)
+
 [node name="MenuLayer" type="CanvasLayer" parent="."]
 process_mode = 3
 
