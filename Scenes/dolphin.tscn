@@ -307,4 +307,4 @@ tree_root = SubResource("AnimationNodeStateMachine_qpbqm")
 anim_player = NodePath("../AnimationPlayer")
 parameters/conditions/Start_AIM = true
 parameters/conditions/Stop_AIM = false
-parameters/conditions/dead = true
+parameters/conditions/dead = false
