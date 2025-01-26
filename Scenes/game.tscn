@@ -51,9 +51,6 @@ position = Vector2(1192, 194)
 
 [node name="Side" parent="Level" instance=ExtResource("7_lj3i0")]
 
-[node name="FallingRock2" parent="Level" instance=ExtResource("4_mro6d")]
-position = Vector2(2402, 182)
-
 [node name="MenuLayer" type="CanvasLayer" parent="."]
 process_mode = 3
 
