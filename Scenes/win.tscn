@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://k7evt7vqtn86"]
+
+[ext_resource type="Script" path="res://Scripts/win.gd" id="1_wre44"]
+[ext_resource type="Texture2D" uid="uid://sw6jfqi2jih" path="res://Assets/Sprites/Menu/exit.png" id="4_xjl33"]
+
+[node name="Win" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_wre44")
+
+[node name="ExitButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = -308.0
+offset_top = -15.0
+offset_right = -127.0
+offset_bottom = 34.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("4_xjl33")
+
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

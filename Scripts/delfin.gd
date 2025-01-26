@@ -28,3 +28,4 @@ func on_bump_kill():
 	print("on bump kill")
 	anim_tree["parameters/conditions/dead"] = true
 	Global.dolphin_dead = true
+	Global.guy_win()

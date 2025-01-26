@@ -24,7 +24,6 @@ func _on_trigger_area_body_entered(body: Node2D) -> void:
 # Funkcja wykrywająca delfina i nabijająca mu guza
 func _on_killbox_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Dolphin"):
-		Global.dolphin_dead = true
 		bump_kill.emit()
 		print("Guzior nabity!")
 		

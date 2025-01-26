@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bcyrah88k0iba"]
+[gd_scene load_steps=3 format=3 uid="uid://bcyrah88k0iba"]
 
 [ext_resource type="Script" path="res://Scripts/instructions.gd" id="1_a56tp"]
+[ext_resource type="Texture2D" uid="uid://dsn27pe5a1xqn" path="res://Assets/Sprites/Background/ekran5.png" id="2_wdu2j"]
 
 [node name="Instructions" type="Control"]
 layout_mode = 3
@@ -15,7 +16,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("1_a56tp")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -28,16 +29,18 @@ offset_right = 480.0
 offset_bottom = 270.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_wdu2j")
 
 [node name="Ok" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
-offset_left = -65.5
-offset_top = 152.0
-offset_right = 65.5
-offset_bottom = 235.0
+offset_left = -334.0
+offset_top = 103.0
+offset_right = -203.0
+offset_bottom = 186.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.2, 1.2)
 theme_override_font_sizes/font_size = 50
 text = "  OK  "
 
