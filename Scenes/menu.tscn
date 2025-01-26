@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://daq5chamiq5k3" path="res://Assets/Sprites/Menu/kredytstzaufania.png" id="4_xysjh"]
 [ext_resource type="Texture2D" uid="uid://cekx26xo3xjx" path="res://Assets/Sprites/Menu/exit_button.png" id="5_2rcsb"]
 [ext_resource type="Texture2D" uid="uid://b8ejm0r88n07y" path="res://Assets/Sprites/Menu/tlogabrieliW.png" id="7_6ulg6"]
-[ext_resource type="Texture2D" uid="uid://dalkqkthh1tnt" path="res://Assets/Sprites/Interactive/logo_shit_finalnet.png" id="8_fq5x3"]
+[ext_resource type="Texture2D" uid="uid://dmppo55yukp4v" path="res://Assets/Sprites/Interactive/logo_sigma_edition_shit.png" id="8_2iteq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qmbak"]
 atlas = ExtResource("1_els47")
@@ -66,60 +66,60 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8ot8n"]
-atlas = ExtResource("8_fq5x3")
+[sub_resource type="AtlasTexture" id="AtlasTexture_q62ld"]
+atlas = ExtResource("8_2iteq")
 region = Rect2(0, 0, 480, 270)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xo2iw"]
-atlas = ExtResource("8_fq5x3")
+[sub_resource type="AtlasTexture" id="AtlasTexture_a42hu"]
+atlas = ExtResource("8_2iteq")
 region = Rect2(480, 0, 480, 270)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_cx67j"]
-atlas = ExtResource("8_fq5x3")
+[sub_resource type="AtlasTexture" id="AtlasTexture_ai5i2"]
+atlas = ExtResource("8_2iteq")
 region = Rect2(960, 0, 480, 270)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nmbev"]
-atlas = ExtResource("8_fq5x3")
+[sub_resource type="AtlasTexture" id="AtlasTexture_3mohi"]
+atlas = ExtResource("8_2iteq")
 region = Rect2(1440, 0, 480, 270)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8r28f"]
-atlas = ExtResource("8_fq5x3")
+[sub_resource type="AtlasTexture" id="AtlasTexture_bso0h"]
+atlas = ExtResource("8_2iteq")
 region = Rect2(1920, 0, 480, 270)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8jdek"]
-atlas = ExtResource("8_fq5x3")
+[sub_resource type="AtlasTexture" id="AtlasTexture_gaep7"]
+atlas = ExtResource("8_2iteq")
 region = Rect2(2400, 0, 480, 270)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ckwvo"]
-atlas = ExtResource("8_fq5x3")
+[sub_resource type="AtlasTexture" id="AtlasTexture_5lps4"]
+atlas = ExtResource("8_2iteq")
 region = Rect2(2880, 0, 480, 270)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cwkjn"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8ot8n")
+"texture": SubResource("AtlasTexture_q62ld")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_xo2iw")
+"texture": SubResource("AtlasTexture_a42hu")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cx67j")
+"texture": SubResource("AtlasTexture_ai5i2")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_nmbev")
+"texture": SubResource("AtlasTexture_3mohi")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8r28f")
+"texture": SubResource("AtlasTexture_bso0h")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8jdek")
+"texture": SubResource("AtlasTexture_gaep7")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ckwvo")
+"texture": SubResource("AtlasTexture_5lps4")
 }],
 "loop": true,
-"name": &"default",
+"name": &"new_animation",
 "speed": 5.0
 }]
 
@@ -273,7 +273,7 @@ texture = ExtResource("7_6ulg6")
 position = Vector2(960, 540)
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_cwkjn")
-autoplay = "default"
+animation = &"new_animation"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

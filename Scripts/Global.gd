@@ -2,6 +2,8 @@ extends Node
 
 @onready var win = preload("res://Scenes/win.tscn")
 @onready var win_layer = get_tree().root.get_node('Game/WinLayer')
+@onready var shader = get_tree().root.get_node('Game/Level/Shader')
+
 var win_texture
 
 var has_bullet: bool = true
@@ -29,4 +31,5 @@ func guy_win():
 	var splash_win = win.instantiate()
 	win_layer.add_child(splash_win)
 	win_texture = load("res://Assets/Sprites/Menu/Bublin_chlop_won.png")
+	
 	

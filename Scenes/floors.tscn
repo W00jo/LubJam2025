@@ -356,3 +356,11 @@ position = Vector2(8084, 384)
 rotation = 0.47822
 scale = Vector2(2.625, 2.625)
 texture = ExtResource("3_j0pww")
+
+[node name="PlayerWin" type="Label" parent="."]
+offset_left = 37272.0
+offset_top = 121.0
+offset_right = 37824.0
+offset_bottom = 231.0
+theme_override_font_sizes/font_size = 80
+text = "Player Won! :p"
