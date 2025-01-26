@@ -16,7 +16,8 @@ func _on_play_pressed() -> void:
 	Audio.play_music()
 
 func _on_credits_pressed() -> void:
-	pass
+	$Creditsy.visible = true
+	$Creditsy.disabled = false
 	
 func _on_exit_pressed() -> void:
 	get_tree().quit()
@@ -26,3 +27,8 @@ func remove_splash():
 
 func remove_conductors():
 	$CanvasLayer2.queue_free()
+
+
+func _on_creditsy_pressed() -> void:
+	$Creditsy.visible = false
+	$Creditsy.disabled = true
