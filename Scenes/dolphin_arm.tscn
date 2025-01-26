@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bofwt7xufdv0g"]
 
 [ext_resource type="Script" path="res://Scripts/dolphin_arm.gd" id="1_5x7uu"]
-[ext_resource type="Texture2D" uid="uid://diruqhfj617ft" path="res://Assets/Sprites/Characters/Delphin/Delfinsamareka20.png" id="2_od0wk"]
+[ext_resource type="Texture2D" uid="uid://b4cixtihbxusj" path="res://Assets/Sprites/Characters/Delphin/Delfinsamareka20.png" id="2_od0wk"]
 
 [sub_resource type="Gradient" id="Gradient_kgtv5"]
 offsets = PackedFloat32Array(0, 0.846667)

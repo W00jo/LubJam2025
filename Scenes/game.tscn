@@ -64,3 +64,5 @@ process_mode = 3
 visible = false
 
 [node name="Instructions" parent="InstructionLayer" instance=ExtResource("11_8dwh7")]
+
+[node name="WinLayer" type="CanvasLayer" parent="."]
