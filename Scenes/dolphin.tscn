@@ -1,11 +1,44 @@
-[gd_scene load_steps=35 format=3 uid="uid://gvfdf4fim2n0"]
+[gd_scene load_steps=37 format=3 uid="uid://gvfdf4fim2n0"]
 
 [ext_resource type="Script" path="res://Scripts/delfin.gd" id="1_lv03r"]
-[ext_resource type="Texture2D" uid="uid://c7fsgblmjgcb2" path="res://Assets/Sprites/Characters/Delphin/Delfin_All_Sheets.png" id="2_cdavg"]
-[ext_resource type="PackedScene" uid="uid://mfdivfgj3c33" path="res://Scenes/dolphin_arm.tscn" id="3_acdta"]
+[ext_resource type="Texture2D" uid="uid://d74vsx7erofq" path="res://Assets/Sprites/Characters/Delphin/Delfin_All_Sheets.png" id="2_cdavg"]
+[ext_resource type="Script" path="res://Scripts/dolphin_arm.gd" id="3_kua7p"]
+[ext_resource type="Texture2D" uid="uid://diruqhfj617ft" path="res://Assets/Sprites/Characters/Delphin/Delfinsamareka20.png" id="4_b4p31"]
+
+[sub_resource type="Gradient" id="Gradient_kgtv5"]
+offsets = PackedFloat32Array(0, 0.846667)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_eyh0c"]
-radius = 41.0
+radius = 63.5059
+
+[sub_resource type="Animation" id="Animation_upye3"]
+resource_name = "Aim"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DolphinArm:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [197]
+}
 
 [sub_resource type="Animation" id="Animation_upye3"]
 resource_name = "Aim"
@@ -276,7 +309,7 @@ states/Start_AIM/position = Vector2(715, -2)
 states/Stop_AIM/node = SubResource("AnimationNodeAnimation_d4xg7")
 states/Stop_AIM/position = Vector2(715, 197)
 states/Swim/node = SubResource("AnimationNodeAnimation_k2tbb")
-states/Swim/position = Vector2(351, 100)
+states/Swim/position = Vector2(352, 100)
 transitions = ["Start", "Swim", SubResource("AnimationNodeStateMachineTransition_ytxin"), "Swim", "Get_UP", SubResource("AnimationNodeStateMachineTransition_x8p8u"), "Get_UP", "Start_AIM", SubResource("AnimationNodeStateMachineTransition_uqose"), "Start_AIM", "Aim", SubResource("AnimationNodeStateMachineTransition_8k7sr"), "Aim", "Stop_AIM", SubResource("AnimationNodeStateMachineTransition_decru"), "Stop_AIM", "Get_Down", SubResource("AnimationNodeStateMachineTransition_yee8i"), "Get_Down", "Swim", SubResource("AnimationNodeStateMachineTransition_du6hf"), "Swim", "Get_DMG", SubResource("AnimationNodeStateMachineTransition_q6cqd"), "Get_UP", "Get_DMG", SubResource("AnimationNodeStateMachineTransition_d4yyd"), "Start_AIM", "Get_DMG", SubResource("AnimationNodeStateMachineTransition_m53na"), "Aim", "Get_DMG", SubResource("AnimationNodeStateMachineTransition_8w805"), "Stop_AIM", "Get_DMG", SubResource("AnimationNodeStateMachineTransition_iqw8q"), "Get_Down", "Get_DMG", SubResource("AnimationNodeStateMachineTransition_t0vxj")]
 graph_offset = Vector2(1, -54)
 
@@ -289,9 +322,23 @@ texture = ExtResource("2_cdavg")
 hframes = 48
 vframes = 5
 
-[node name="DolphinArm" parent="." instance=ExtResource("3_acdta")]
+[node name="DolphinArm" type="Node2D" parent="."]
 visible = false
 position = Vector2(-7, -6)
+script = ExtResource("3_kua7p")
+
+[node name="BulletSpawn" type="Marker2D" parent="DolphinArm"]
+position = Vector2(64, -18)
+
+[node name="Line2D" type="Line2D" parent="DolphinArm"]
+position = Vector2(38, -50)
+points = PackedVector2Array(26, 32)
+default_color = Color(1, 1, 1, 0.709804)
+gradient = SubResource("Gradient_kgtv5")
+
+[node name="Sprite2D" type="Sprite2D" parent="DolphinArm"]
+position = Vector2(5, 6)
+texture = ExtResource("4_b4p31")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, -2)
@@ -305,6 +352,6 @@ libraries = {
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_qpbqm")
 anim_player = NodePath("../AnimationPlayer")
-parameters/conditions/Start_AIM = true
+parameters/conditions/Start_AIM = false
 parameters/conditions/Stop_AIM = false
 parameters/conditions/dead = false
