@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://codjs2yak4gbp" path="res://Assets/Sprites/Interactive/stalamit2.png" id="2_b6gbf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8exj8"]
-size = Vector2(126, 462)
+size = Vector2(64, 329.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y3m7w"]
 size = Vector2(68, 192)
@@ -21,7 +21,7 @@ texture = ExtResource("2_b6gbf")
 collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerArea"]
-position = Vector2(0, 168)
+position = Vector2(124, 103)
 shape = SubResource("RectangleShape2D_8exj8")
 
 [node name="Killbox" type="Area2D" parent="."]

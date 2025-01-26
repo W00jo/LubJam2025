@@ -51,9 +51,6 @@ position = Vector2(1192, 194)
 
 [node name="Side" parent="Level" instance=ExtResource("7_lj3i0")]
 
-[node name="FallingRock2" parent="Level" instance=ExtResource("4_mro6d")]
-position = Vector2(2402, 182)
-
 [node name="MenuLayer" type="CanvasLayer" parent="."]
 process_mode = 3
 
@@ -67,5 +64,73 @@ visible = false
 
 [node name="WinLayer" type="CanvasLayer" parent="."]
 
+<<<<<<< Updated upstream
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 autoplay = true
+=======
+[node name="CollectibleBullet" parent="." instance=ExtResource("5_38l20")]
+position = Vector2(3140, 215)
+
+[node name="CollectibleBullet2" parent="." instance=ExtResource("5_38l20")]
+position = Vector2(6017, 865)
+
+[node name="CollectibleBullet3" parent="." instance=ExtResource("5_38l20")]
+position = Vector2(9114, 993)
+
+[node name="CollectibleBullet4" parent="." instance=ExtResource("5_38l20")]
+position = Vector2(14497, 698)
+
+[node name="CollectibleBullet6" parent="." instance=ExtResource("5_38l20")]
+position = Vector2(17748, 876)
+
+[node name="CollectibleBullet7" parent="." instance=ExtResource("5_38l20")]
+position = Vector2(20324, 551)
+
+[node name="CollectibleBullet8" parent="." instance=ExtResource("5_38l20")]
+position = Vector2(22048, 997)
+
+[node name="CollectibleBullet9" parent="." instance=ExtResource("5_38l20")]
+position = Vector2(25360, 732)
+
+[node name="CollectibleBullet10" parent="." instance=ExtResource("5_38l20")]
+position = Vector2(27699, 704)
+
+[node name="CollectibleBullet11" parent="." instance=ExtResource("5_38l20")]
+position = Vector2(30823, 165)
+
+[node name="CollectibleBullet12" parent="." instance=ExtResource("5_38l20")]
+position = Vector2(34646, 979)
+
+[node name="CollectibleBullet13" parent="." instance=ExtResource("5_38l20")]
+position = Vector2(35828, 580)
+
+[node name="CollectibleBullet5" parent="." instance=ExtResource("5_38l20")]
+position = Vector2(13143, 161)
+
+[node name="ShieldBubble" parent="." instance=ExtResource("8_odn0u")]
+position = Vector2(4656, 199)
+
+[node name="ShieldBubble2" parent="." instance=ExtResource("8_odn0u")]
+position = Vector2(9516, 656)
+
+[node name="ShieldBubble3" parent="." instance=ExtResource("8_odn0u")]
+position = Vector2(12674, 719)
+
+[node name="ShieldBubble4" parent="." instance=ExtResource("8_odn0u")]
+position = Vector2(16174, 199)
+
+[node name="ShieldBubble5" parent="." instance=ExtResource("8_odn0u")]
+position = Vector2(19553, 670)
+
+[node name="ShieldBubble6" parent="." instance=ExtResource("8_odn0u")]
+position = Vector2(23023, 647)
+
+[node name="ShieldBubble7" parent="." instance=ExtResource("8_odn0u")]
+position = Vector2(25823, 657)
+
+[node name="ShieldBubble8" parent="." instance=ExtResource("8_odn0u")]
+position = Vector2(27886, 703)
+
+[node name="ShieldBubble9" parent="." instance=ExtResource("8_odn0u")]
+position = Vector2(33491, 892)
+>>>>>>> Stashed changes
