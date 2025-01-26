@@ -1,7 +1,7 @@
 [gd_scene load_steps=35 format=3 uid="uid://gvfdf4fim2n0"]
 
 [ext_resource type="Script" path="res://Scripts/delfin.gd" id="1_lv03r"]
-[ext_resource type="Texture2D" uid="uid://tffjirl40h2y" path="res://Assets/Sprites/Characters/Delphin/Delfin_All_Sheets.png" id="2_cdavg"]
+[ext_resource type="Texture2D" uid="uid://c7fsgblmjgcb2" path="res://Assets/Sprites/Characters/Delphin/Delfin_All_Sheets.png" id="2_cdavg"]
 [ext_resource type="PackedScene" uid="uid://mfdivfgj3c33" path="res://Scenes/dolphin_arm.tscn" id="3_acdta"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_eyh0c"]
