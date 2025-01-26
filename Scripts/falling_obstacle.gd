@@ -1,0 +1,45 @@
+extends StaticBody2D
+
+@export var fall_speed: float = 800 # Prędkość spadania obiektu
+
+var is_falling: bool = false # Czy spada
+var has_landed: bool = false # Czy już dotknął "Floor"
+
+@onready var killbox = $Killbox
+@onready var trigger_area = $TriggerArea
+@onready var collision_shape = $CollisionObstacle
+
+func _ready():
+	# Killbox i Collision_Obstacle domyślnie są wyłączone
+	killbox.monitoring = false
+
+func _physics_process(delta: float) -> void:
+	if is_falling:
+		global_position.y += fall_speed * delta
+		
+	if has_landed and collision_shape != null:
+		if collision_shape.disabled:
+			collision_shape.disabled = false
+
+# Funkcja wykrywająca graczy; triggeruje spadanie głazu
+func _on_trigger_area_body_entered(body: CharacterBody2D) -> void:
+	
+	if body.is_in_group("BubbleGuy") or body.is_in_group("Dolphin"):
+		$TriggerArea.hide()
+		print("Body entered:", body.name)
+		is_falling = true
+		killbox.monitoring = true
+
+# 
+func _on_killbox_body_entered(body: Node2D) -> void:
+	if body.is_in_group("Floor"):
+		is_falling = false
+		has_landed = true
+		_disable_killbox()
+	elif body.is_in_group("BubbleGuy") or body.is_in_group("Dolphin"):
+		print ("AUĆ")
+	
+func _disable_killbox():
+	set_deferred("killbox.monitoring", false)
+	killbox.collision_layer = 0
+	killbox.collision_mask = 0
