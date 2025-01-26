@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://brsj11mvkc6fj"]
 
 [ext_resource type="Script" path="res://Scripts/side.gd" id="1_37gkk"]
-[ext_resource type="Texture2D" uid="uid://bveh0usq0id37" path="res://Assets/Sprites/Interactive/pianapaskudna-Sheet.png" id="2_uhlfs"]
+[ext_resource type="Texture2D" uid="uid://ddnd3anprvk8i" path="res://Assets/Sprites/Interactive/pianapaskudna-Sheet.png" id="2_uhlfs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hlsq4"]
 atlas = ExtResource("2_uhlfs")
@@ -77,6 +77,7 @@ script = ExtResource("1_37gkk")
 position = Vector2(40, 540)
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_xkbco")
+autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(29.5, 544)
