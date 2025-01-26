@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://hg7f7x82640v"]
 
-[ext_resource type="Texture2D" uid="uid://cqc5ogr20xnbt" path="res://Assets/Sprites/Background/MorzeTlo.png" id="1_fqrcg"]
-[ext_resource type="Texture2D" uid="uid://cijqyp05khknu" path="res://Assets/Sprites/Background/long_parallax.png" id="2_tfmaq"]
+[ext_resource type="Texture2D" uid="uid://blihyymnvyk1t" path="res://Assets/Sprites/Background/MorzeTlo.png" id="1_fqrcg"]
+[ext_resource type="Texture2D" uid="uid://bnf0v0clfdpo" path="res://Assets/Sprites/Background/long_parallax.png" id="2_tfmaq"]
 
 [node name="ParallaxBackground" type="ParallaxBackground"]
 
