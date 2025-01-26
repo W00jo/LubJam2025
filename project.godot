@@ -33,6 +33,8 @@ project/assembly_name="Bubble"
 Dolphin=""
 BubbleGuy=""
 Bullet=""
+ShieldBubble=""
+FallingRock=""
 
 [input]
 

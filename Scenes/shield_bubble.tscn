@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3fmv0"]
 size = Vector2(126.572, 127.279)
 
-[node name="ShieldBubble" type="Node2D"]
+[node name="ShieldBubble" type="Node2D" groups=["ShieldBubble"]]
 script = ExtResource("1_miaed")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
