@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bcyrah88k0iba"]
 
 [ext_resource type="Script" path="res://Scripts/instructions.gd" id="1_a56tp"]
-[ext_resource type="Texture2D" uid="uid://dsn27pe5a1xqn" path="res://Assets/Sprites/Background/ekran5.png" id="2_wdu2j"]
+[ext_resource type="Texture2D" uid="uid://tjxgf72vbjyq" path="res://Assets/Sprites/Background/meunu5.png" id="2_jdas8"]
 
 [node name="Instructions" type="Control"]
 layout_mode = 3
@@ -29,7 +29,7 @@ offset_right = 480.0
 offset_bottom = 270.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_wdu2j")
+texture = ExtResource("2_jdas8")
 
 [node name="Ok" type="Button" parent="."]
 layout_mode = 1

@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://kkijud1tom28"]
 
 [ext_resource type="Script" path="res://Scripts/bullet.gd" id="1_8klpg"]
-[ext_resource type="Texture2D" uid="uid://vwybtno08pq4" path="res://Assets/Sprites/Characters/Delphin/Lotka.png" id="2_np3wv"]
+[ext_resource type="Texture2D" uid="uid://jhf048wfkqo" path="res://Assets/Sprites/Characters/Delphin/Lotka.png" id="2_np3wv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jk670"]
 size = Vector2(28, 8)
 
 [node name="Bullet" type="Area2D" groups=["Bullet"]]
-scale = Vector2(0.5, 0.5)
+scale = Vector2(2.5, 2.5)
 script = ExtResource("1_8klpg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

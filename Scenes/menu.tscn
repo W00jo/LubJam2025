@@ -1,14 +1,14 @@
 [gd_scene load_steps=29 format=3 uid="uid://c10e4kd8e6o3g"]
 
-[ext_resource type="Texture2D" uid="uid://cqw6qhg0vrs1y" path="res://Assets/Sprites/Menu/menu-shiit.png" id="1_els47"]
+[ext_resource type="Texture2D" uid="uid://ds66w740t53a4" path="res://Assets/Sprites/Menu/menu-shiit.png" id="1_els47"]
 [ext_resource type="Script" path="res://Scenes/menu.gd" id="1_id2h2"]
-[ext_resource type="Texture2D" uid="uid://cvstk77ddm73v" path="res://Assets/Sprites/Menu/kupseplej.png" id="2_iuo1g"]
-[ext_resource type="Texture2D" uid="uid://c223hsm26jhyp" path="res://Assets/Sprites/Menu/optionst_button.png" id="3_je75w"]
-[ext_resource type="Texture2D" uid="uid://daq5chamiq5k3" path="res://Assets/Sprites/Menu/kredytstzaufania.png" id="4_xysjh"]
-[ext_resource type="Texture2D" uid="uid://cekx26xo3xjx" path="res://Assets/Sprites/Menu/exit_button.png" id="5_2rcsb"]
-[ext_resource type="Texture2D" uid="uid://b8ejm0r88n07y" path="res://Assets/Sprites/Menu/tlogabrieliW.png" id="7_6ulg6"]
-[ext_resource type="Texture2D" uid="uid://dmppo55yukp4v" path="res://Assets/Sprites/Interactive/logo_sigma_edition_shit.png" id="8_2iteq"]
-[ext_resource type="Texture2D" uid="uid://ksgwj1hn6bsh" path="res://Assets/Sprites/Menu/tworcy.png" id="9_v6vij"]
+[ext_resource type="Texture2D" uid="uid://c2gw8tnlb52h1" path="res://Assets/Sprites/Menu/kupseplej.png" id="2_iuo1g"]
+[ext_resource type="Texture2D" uid="uid://dk2xw6tt5jw6y" path="res://Assets/Sprites/Menu/optionst_button.png" id="3_je75w"]
+[ext_resource type="Texture2D" uid="uid://c135bejdv0urc" path="res://Assets/Sprites/Menu/kredytstzaufania.png" id="4_xysjh"]
+[ext_resource type="Texture2D" uid="uid://d4j4u67hhduhv" path="res://Assets/Sprites/Menu/exit_button.png" id="5_2rcsb"]
+[ext_resource type="Texture2D" uid="uid://dkalpjgdtdfl4" path="res://Assets/Sprites/Menu/tlogabrieliW.png" id="7_6ulg6"]
+[ext_resource type="Texture2D" uid="uid://bjey1eumkmh14" path="res://Assets/Sprites/Interactive/logo_sigma_edition_shit.png" id="8_2iteq"]
+[ext_resource type="Texture2D" uid="uid://dg2qwo3ff6jpk" path="res://Assets/Sprites/Menu/tworcy.png" id="9_v6vij"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qmbak"]
 atlas = ExtResource("1_els47")
@@ -259,7 +259,6 @@ layout_mode = 2
 icon = ExtResource("5_2rcsb")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
 anchors_preset = 15

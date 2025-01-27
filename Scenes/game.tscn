@@ -26,13 +26,13 @@ script = ExtResource("1_87dlu")
 collision_mask = 1
 
 [node name="BubbleGuy" parent="Level" instance=ExtResource("1_k043y")]
-position = Vector2(810, 267)
+position = Vector2(1600, 267)
 collision_mask = 15
 
 [node name="Delfin" parent="Level" instance=ExtResource("2_a4dgr")]
-position = Vector2(271, 509)
+position = Vector2(800, 509)
 scale = Vector2(2, 2)
-collision_mask = 14
+collision_mask = 15
 
 [node name="Camera2D" type="Camera2D" parent="Level"]
 position = Vector2(960, 540)
@@ -48,8 +48,6 @@ position = Vector2(871, 543)
 
 [node name="ShieldBubble" parent="Level" instance=ExtResource("8_odn0u")]
 position = Vector2(1192, 194)
-
-[node name="Side" parent="Level" instance=ExtResource("7_lj3i0")]
 
 [node name="FallingRock2" parent="Level" instance=ExtResource("4_mro6d")]
 position = Vector2(2402, 182)
@@ -116,6 +114,8 @@ position = Vector2(34224, 945)
 
 [node name="ShieldBubble7" parent="Level" instance=ExtResource("8_odn0u")]
 position = Vector2(26051, 685)
+
+[node name="Side" parent="Level" instance=ExtResource("7_lj3i0")]
 
 [node name="MenuLayer" type="CanvasLayer" parent="."]
 process_mode = 3
