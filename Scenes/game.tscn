@@ -22,6 +22,9 @@ script = ExtResource("1_87dlu")
 
 [node name="ParallaxBackground" parent="Level" instance=ExtResource("2_telu0")]
 
+[node name="FallingRock2" parent="Level" instance=ExtResource("4_mro6d")]
+position = Vector2(2399, 114)
+
 [node name="Floors" parent="Level" instance=ExtResource("3_ys4qp")]
 collision_mask = 1
 
@@ -37,9 +40,6 @@ collision_mask = 15
 [node name="Camera2D" type="Camera2D" parent="Level"]
 position = Vector2(960, 540)
 
-[node name="FallingRock" parent="Level" instance=ExtResource("4_mro6d")]
-position = Vector2(642, 128)
-
 [node name="CollectibleBullet" parent="Level" instance=ExtResource("5_38l20")]
 position = Vector2(1073, 540)
 
@@ -48,9 +48,6 @@ position = Vector2(871, 543)
 
 [node name="ShieldBubble" parent="Level" instance=ExtResource("8_odn0u")]
 position = Vector2(1192, 194)
-
-[node name="FallingRock2" parent="Level" instance=ExtResource("4_mro6d")]
-position = Vector2(2402, 182)
 
 [node name="CollectibleBullet2" parent="Level" instance=ExtResource("5_38l20")]
 position = Vector2(2895, 200)

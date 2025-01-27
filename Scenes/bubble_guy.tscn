@@ -1,7 +1,7 @@
 [gd_scene load_steps=54 format=3 uid="uid://31sgm2m6coed"]
 
 [ext_resource type="Script" path="res://Scripts/bubble_guy.gd" id="1_v53aw"]
-[ext_resource type="Texture2D" uid="uid://cgypaprs1sxxn" path="res://Assets/Sprites/Characters/Bubble-Sheet.png" id="3_3im20"]
+[ext_resource type="Texture2D" uid="uid://be6a1lrdmrnno" path="res://Assets/Sprites/Characters/Bubble-Sheet.png" id="3_3im20"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fln30"]
 radius = 59.357
@@ -405,11 +405,13 @@ position = Vector2(-1.5, -2)
 shape = SubResource("RectangleShape2D_3ys38")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+process_mode = 3
 libraries = {
 "": SubResource("AnimationLibrary_gjj3l")
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
+process_mode = 3
 tree_root = SubResource("AnimationNodeStateMachine_pjbjo")
 anim_player = NodePath("../AnimationPlayer")
 parameters/conditions/Break_Bubble = false

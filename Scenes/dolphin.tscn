@@ -1,9 +1,9 @@
 [gd_scene load_steps=37 format=3 uid="uid://gvfdf4fim2n0"]
 
 [ext_resource type="Script" path="res://Scripts/delfin.gd" id="1_lv03r"]
-[ext_resource type="Texture2D" uid="uid://tffjirl40h2y" path="res://Assets/Sprites/Characters/Delphin/Delfin_All_Sheets.png" id="2_cdavg"]
+[ext_resource type="Texture2D" uid="uid://d74vsx7erofq" path="res://Assets/Sprites/Characters/Delphin/Delfin_All_Sheets.png" id="2_cdavg"]
 [ext_resource type="Script" path="res://Scripts/dolphin_arm.gd" id="3_kua7p"]
-[ext_resource type="Texture2D" uid="uid://208r3w0atxb1" path="res://Assets/Sprites/Characters/Delphin/Delfinsamareka20.png" id="4_b4p31"]
+[ext_resource type="Texture2D" uid="uid://diruqhfj617ft" path="res://Assets/Sprites/Characters/Delphin/Delfinsamareka20.png" id="4_b4p31"]
 
 [sub_resource type="Gradient" id="Gradient_kgtv5"]
 offsets = PackedFloat32Array(0, 0.246667)
@@ -272,7 +272,7 @@ states/Aim/node = SubResource("AnimationNodeAnimation_6vmcs")
 states/Aim/position = Vector2(908, 100)
 states/End/position = Vector2(1108, 100)
 states/Get_DMG/node = SubResource("AnimationNodeAnimation_32srk")
-states/Get_DMG/position = Vector2(624, 93)
+states/Get_DMG/position = Vector2(625, 93)
 states/Get_Down/node = SubResource("AnimationNodeAnimation_6ms6j")
 states/Get_Down/position = Vector2(529, 202)
 states/Get_UP/node = SubResource("AnimationNodeAnimation_8npe4")
@@ -319,11 +319,13 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_ml5yh")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+process_mode = 3
 libraries = {
 "": SubResource("AnimationLibrary_njhvm")
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
+process_mode = 3
 tree_root = SubResource("AnimationNodeStateMachine_qpbqm")
 anim_player = NodePath("../AnimationPlayer")
 parameters/conditions/Start_AIM = false

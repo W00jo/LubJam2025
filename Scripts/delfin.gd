@@ -27,5 +27,6 @@ func _physics_process(delta: float) -> void:
 func on_bump_kill():
 	print("on bump kill")
 	anim_tree["parameters/conditions/dead"] = true
+	await anim_tree.animation_finished
 	Global.dolphin_dead = true
 	Global.guy_win()
