@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cphod0ydvo8ke"]
 
 [ext_resource type="Script" path="res://Scripts/shield_bubble.gd" id="1_miaed"]
-[ext_resource type="Texture2D" uid="uid://b8xvo0wvfdu4" path="res://Assets/Sprites/Interactive/Bublesśmierdzące.png" id="2_a6xwa"]
+[ext_resource type="Texture2D" uid="uid://bw76jn4587obo" path="res://Assets/Sprites/Interactive/Bublesśmierdzące.png" id="2_a6xwa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3fmv0"]
 size = Vector2(126.572, 127.279)

@@ -1,20 +1,23 @@
-[gd_scene load_steps=16 format=3 uid="uid://bk7nkdcj7xens"]
+[gd_scene load_steps=19 format=3 uid="uid://bk7nkdcj7xens"]
 
-[ext_resource type="Texture2D" uid="uid://dgrc3e7inga2k" path="res://Assets/Sprites/Background/floors.png" id="1_y6jeu"]
-[ext_resource type="Texture2D" uid="uid://xxl4ty644gfy" path="res://Assets/Sprites/Enviroment/Animals/Gacek.png" id="2_ut2kb"]
-[ext_resource type="Texture2D" uid="uid://bdb1d5310ik22" path="res://Assets/Sprites/Enviroment/Animals/kosciDelfina.png" id="3_j0pww"]
+[ext_resource type="Texture2D" uid="uid://ol1dbip7vgud" path="res://Assets/Sprites/Background/floors.png" id="1_y6jeu"]
+[ext_resource type="Texture2D" uid="uid://lmofjnmt7e0q" path="res://Assets/Sprites/Enviroment/Animals/Gacek.png" id="2_ut2kb"]
+[ext_resource type="Texture2D" uid="uid://cjvm8b5bfjgnr" path="res://Assets/Sprites/Enviroment/Animals/kosciDelfina.png" id="3_j0pww"]
 [ext_resource type="PackedScene" uid="uid://48io4jtiaj5t" path="res://Scenes/falling_rock.tscn" id="3_titvf"]
 [ext_resource type="PackedScene" uid="uid://dfclists1idkv" path="res://Scenes/falling_rock2.tscn" id="4_376lc"]
-[ext_resource type="Texture2D" uid="uid://q76rjwm4egc7" path="res://Assets/Sprites/Enviroment/Plants/glon_samotny2.png" id="4_vcx2e"]
-[ext_resource type="Texture2D" uid="uid://bxvg34t67as7a" path="res://Assets/Sprites/Enviroment/Plants/glon_z_kolegami_top.png" id="5_a8w88"]
-[ext_resource type="Texture2D" uid="uid://chbfdq1p8dwlm" path="res://Assets/Sprites/Enviroment/Plants/roslina3.png" id="6_868fh"]
-[ext_resource type="Texture2D" uid="uid://qytdxwd8l6er" path="res://Assets/Sprites/Enviroment/Plants/roslina1.png" id="7_jefci"]
-[ext_resource type="Texture2D" uid="uid://d7vwe0xqulda" path="res://Assets/Sprites/Enviroment/Rocks/Kamien_.png" id="8_ukf71"]
-[ext_resource type="Texture2D" uid="uid://dawb44ul3b5xf" path="res://Assets/Sprites/Enviroment/Plants/glon_samotny.png" id="9_wlvd2"]
-[ext_resource type="Texture2D" uid="uid://c3b6se51hswbm" path="res://Assets/Sprites/Enviroment/Animals/Bubbles/bublepachnace.png" id="10_em5yj"]
-[ext_resource type="Texture2D" uid="uid://hcb1og8dqwfc" path="res://Assets/Sprites/Enviroment/Plants/glonyNadnie.png" id="11_qqc3a"]
-[ext_resource type="Texture2D" uid="uid://h30dr3hg1238" path="res://Assets/Sprites/Interactive/Kotwica.png" id="12_flonl"]
+[ext_resource type="Texture2D" uid="uid://cjggemutfvx1j" path="res://Assets/Sprites/Enviroment/Plants/glon_samotny2.png" id="4_vcx2e"]
+[ext_resource type="Texture2D" uid="uid://bbvm5bauba6v4" path="res://Assets/Sprites/Enviroment/Plants/glon_z_kolegami_top.png" id="5_a8w88"]
+[ext_resource type="Texture2D" uid="uid://b8yy1o8ftpjy1" path="res://Assets/Sprites/Enviroment/Plants/roslina3.png" id="6_868fh"]
+[ext_resource type="Texture2D" uid="uid://cklxd3bf224at" path="res://Assets/Sprites/Enviroment/Plants/roslina1.png" id="7_jefci"]
+[ext_resource type="Texture2D" uid="uid://c62qan2pw6fbn" path="res://Assets/Sprites/Enviroment/Rocks/Kamien_.png" id="8_ukf71"]
+[ext_resource type="Texture2D" uid="uid://catdctguoxij6" path="res://Assets/Sprites/Enviroment/Plants/glon_samotny.png" id="9_wlvd2"]
+[ext_resource type="Texture2D" uid="uid://bqwq5igqe7b4s" path="res://Assets/Sprites/Enviroment/Plants/glonyNadnie.png" id="11_qqc3a"]
+[ext_resource type="Texture2D" uid="uid://d0iygpgr224sr" path="res://Assets/Sprites/Interactive/Kotwica.png" id="12_flonl"]
+[ext_resource type="Texture2D" uid="uid://boiuo2wtn80gt" path="res://Assets/Sprites/Enviroment/Bubbles/bublepachnace.png" id="13_biy3l"]
 [ext_resource type="PackedScene" uid="uid://djf2mb8cp5bdf" path="res://Scenes/falling_obstacles.tscn" id="13_vs76o"]
+[ext_resource type="Texture2D" uid="uid://dpc6min4ej6ih" path="res://Assets/Sprites/Enviroment/Animals/Sprite-0007-Sheet.png" id="16_0esek"]
+[ext_resource type="Texture2D" uid="uid://flfftk7xutqt" path="res://Assets/Sprites/Enviroment/Boat/odka11.png" id="17_0jw5s"]
+[ext_resource type="Texture2D" uid="uid://b8kgwt1rdbs2x" path="res://Assets/Sprites/Enviroment/Animals/RybkiMalePomaranczowe.png" id="18_wxaoh"]
 
 [node name="Floors" type="StaticBody2D" groups=["Floor"]]
 collision_mask = 17
@@ -169,7 +172,7 @@ texture = ExtResource("8_ukf71")
 [node name="Bublepachnace" type="Sprite2D" parent="Node"]
 position = Vector2(621, 626)
 scale = Vector2(5.5625, 5.5625)
-texture = ExtResource("10_em5yj")
+texture = ExtResource("13_biy3l")
 
 [node name="GlonSamotny2" type="Sprite2D" parent="."]
 position = Vector2(3926, 779)
@@ -271,7 +274,7 @@ texture = ExtResource("8_ukf71")
 [node name="Bublepachnace2" type="Sprite2D" parent="."]
 position = Vector2(30013, 225)
 scale = Vector2(4.25, 4.25)
-texture = ExtResource("10_em5yj")
+texture = ExtResource("13_biy3l")
 
 [node name="Kotwica" type="Sprite2D" parent="."]
 position = Vector2(30621, 950.001)
@@ -356,6 +359,75 @@ position = Vector2(8084, 384)
 rotation = 0.47822
 scale = Vector2(2.625, 2.625)
 texture = ExtResource("3_j0pww")
+
+[node name="Sprite-0007-sheet" type="Sprite2D" parent="."]
+position = Vector2(2139, 254)
+texture = ExtResource("16_0esek")
+
+[node name="Sprite-0007-sheet2" type="Sprite2D" parent="."]
+position = Vector2(3518, 656)
+texture = ExtResource("16_0esek")
+
+[node name="Sprite-0007-sheet3" type="Sprite2D" parent="."]
+position = Vector2(5521, 171)
+texture = ExtResource("16_0esek")
+
+[node name="Sprite-0007-sheet4" type="Sprite2D" parent="."]
+position = Vector2(6446, 702)
+texture = ExtResource("16_0esek")
+
+[node name="Sprite-0007-sheet5" type="Sprite2D" parent="."]
+position = Vector2(8627, 742)
+texture = ExtResource("16_0esek")
+
+[node name="Sprite-0007-sheet6" type="Sprite2D" parent="."]
+position = Vector2(11276, 421)
+texture = ExtResource("16_0esek")
+
+[node name="Odka11" type="Sprite2D" parent="."]
+position = Vector2(15661.4, 173.5)
+scale = Vector2(1.89062, 1.89063)
+texture = ExtResource("17_0jw5s")
+
+[node name="Sprite-0007-sheet7" type="Sprite2D" parent="."]
+position = Vector2(13949, 481)
+texture = ExtResource("16_0esek")
+
+[node name="Sprite-0007-sheet8" type="Sprite2D" parent="."]
+position = Vector2(17389, 473)
+texture = ExtResource("16_0esek")
+
+[node name="Sprite-0007-sheet9" type="Sprite2D" parent="."]
+position = Vector2(20146, 569)
+texture = ExtResource("16_0esek")
+
+[node name="Sprite-0007-sheet10" type="Sprite2D" parent="."]
+position = Vector2(24587, 578)
+texture = ExtResource("16_0esek")
+
+[node name="Sprite-0007-sheet11" type="Sprite2D" parent="."]
+position = Vector2(33846, 773)
+texture = ExtResource("16_0esek")
+
+[node name="RybkiMalePomaranczowe" type="Sprite2D" parent="."]
+position = Vector2(31158, 533)
+texture = ExtResource("18_wxaoh")
+
+[node name="RybkiMalePomaranczowe2" type="Sprite2D" parent="."]
+position = Vector2(36682, 849)
+texture = ExtResource("18_wxaoh")
+
+[node name="RybkiMalePomaranczowe3" type="Sprite2D" parent="."]
+position = Vector2(18202, 778)
+texture = ExtResource("18_wxaoh")
+
+[node name="RybkiMalePomaranczowe4" type="Sprite2D" parent="."]
+position = Vector2(7390, 806)
+texture = ExtResource("18_wxaoh")
+
+[node name="RybkiMalePomaranczowe5" type="Sprite2D" parent="."]
+position = Vector2(4375, 678)
+texture = ExtResource("18_wxaoh")
 
 [node name="PlayerWin" type="Label" parent="."]
 offset_left = 37272.0

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bcyrah88k0iba"]
 
 [ext_resource type="Script" path="res://Scripts/instructions.gd" id="1_a56tp"]
-[ext_resource type="Texture2D" uid="uid://58t312q5y7on" path="res://Assets/Sprites/Background/meunu5.png" id="2_jdas8"]
+[ext_resource type="Texture2D" uid="uid://tjxgf72vbjyq" path="res://Assets/Sprites/Background/meunu5.png" id="2_jdas8"]
 
 [node name="Instructions" type="Control"]
 layout_mode = 3
