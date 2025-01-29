@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dfclists1idkv"]
 
 [ext_resource type="Script" path="res://Scripts/falling_rock.gd" id="1_cft5b"]
-[ext_resource type="Texture2D" uid="uid://ta1revbpcjlt" path="res://Assets/Sprites/Interactive/stalamit1.png" id="2_8opli"]
+[ext_resource type="Texture2D" uid="uid://byvlgc20olo3t" path="res://Assets/Sprites/Interactive/stalamit1.png" id="2_8opli"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8exj8"]
 size = Vector2(126, 462)

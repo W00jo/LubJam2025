@@ -1,0 +1,76 @@
+[gd_scene load_steps=8 format=3 uid="uid://ce8ebklcondor"]
+
+[ext_resource type="Script" path="res://Scripts/LinkaDlaBubble.gd" id="1_057gv"]
+[ext_resource type="Texture2D" uid="uid://crgyc07xa5ns8" path="res://Assets/Sprites/Wedka dol-Sheet.png" id="2_a0ikb"]
+
+[sub_resource type="Animation" id="Animation_kbeb4"]
+resource_name = "Zrzut"
+length = 2.0
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+}
+
+[sub_resource type="Animation" id="Animation_esf3c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ys804"]
+_data = {
+"RESET": SubResource("Animation_esf3c"),
+"Zrzut": SubResource("Animation_kbeb4")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0pbju"]
+size = Vector2(235, 145)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8xpg8"]
+size = Vector2(9, 132)
+
+[node name="WinDlaBubble" type="Node2D"]
+script = ExtResource("1_057gv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_a0ikb")
+hframes = 20
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Sprite2D")
+libraries = {
+"": SubResource("AnimationLibrary_ys804")
+}
+
+[node name="Pocztek animacji" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pocztek animacji"]
+position = Vector2(1, 3)
+shape = SubResource("RectangleShape2D_0pbju")
+
+[node name="Win" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Win"]
+position = Vector2(-0.5, -2)
+shape = SubResource("RectangleShape2D_8xpg8")
+
+[connection signal="body_entered" from="Pocztek animacji" to="." method="_on_pocztek_animacji_body_entered"]
+[connection signal="body_entered" from="Win" to="." method="_on_win_body_entered"]
