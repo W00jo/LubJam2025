@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://k7evt7vqtn86"]
+[gd_scene load_steps=6 format=3 uid="uid://k7evt7vqtn86"]
 
 [ext_resource type="Script" path="res://Scripts/win.gd" id="1_wre44"]
-[ext_resource type="Texture2D" uid="uid://sw6jfqi2jih" path="res://Assets/Sprites/Menu/exit.png" id="4_xjl33"]
+[ext_resource type="Texture2D" uid="uid://dnqawjqbubysk" path="res://Assets/Sprites/Menu/Bublin_chlop_won2.png" id="3_6wnmk"]
+[ext_resource type="Texture2D" uid="uid://jte4lx11v4d1" path="res://Assets/Sprites/Menu/dolphin_won.png" id="4_xbe3p"]
+[ext_resource type="Texture2D" uid="uid://piwx25idqe1c" path="res://Assets/Sprites/Menu/exit.png" id="4_xjl33"]
+[ext_resource type="Texture2D" uid="uid://ceokfm4bbd5po" path="res://Assets/Sprites/Menu/kupseplej.png" id="5_ae3dh"]
 
 [node name="Win" type="Control"]
 process_mode = 3
@@ -17,13 +20,35 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("1_wre44")
 
+[node name="Bubble wins" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.00002, 1.52588e-05)
+scale = Vector2(2.97083, 2.97083)
+texture = ExtResource("3_6wnmk")
+
+[node name="DolphinWins" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(5.44995, 1.5)
+scale = Vector2(2.9625, 2.9625)
+texture = ExtResource("4_xbe3p")
+
 [node name="ExitButton" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = -308.0
-offset_top = -15.0
+offset_top = 99.0
 offset_right = -127.0
-offset_bottom = 34.0
+offset_bottom = 148.0
 scale = Vector2(3, 3)
 texture_normal = ExtResource("4_xjl33")
 
+[node name="Restart" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = -312.0
+offset_top = -86.0
+offset_right = -201.0
+offset_bottom = -55.0
+scale = Vector2(5, 5)
+texture_normal = ExtResource("5_ae3dh")
+
 [connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]

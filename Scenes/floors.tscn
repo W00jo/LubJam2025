@@ -1,23 +1,26 @@
-[gd_scene load_steps=19 format=3 uid="uid://bk7nkdcj7xens"]
+[gd_scene load_steps=22 format=3 uid="uid://bk7nkdcj7xens"]
 
-[ext_resource type="Texture2D" uid="uid://ol1dbip7vgud" path="res://Assets/Sprites/Background/floors.png" id="1_y6jeu"]
-[ext_resource type="Texture2D" uid="uid://lmofjnmt7e0q" path="res://Assets/Sprites/Enviroment/Animals/Gacek.png" id="2_ut2kb"]
-[ext_resource type="Texture2D" uid="uid://cjvm8b5bfjgnr" path="res://Assets/Sprites/Enviroment/Animals/kosciDelfina.png" id="3_j0pww"]
+[ext_resource type="Texture2D" uid="uid://ios2o1d6alo2" path="res://Assets/Sprites/Background/floors.png" id="1_y6jeu"]
+[ext_resource type="Texture2D" uid="uid://dy6s8ikwrcfwp" path="res://Assets/Sprites/Enviroment/Animals/Gacek.png" id="2_ut2kb"]
+[ext_resource type="Texture2D" uid="uid://b38ylpqmoqre" path="res://Assets/Sprites/Enviroment/Animals/kosciDelfina.png" id="3_j0pww"]
 [ext_resource type="PackedScene" uid="uid://48io4jtiaj5t" path="res://Scenes/falling_rock.tscn" id="3_titvf"]
 [ext_resource type="PackedScene" uid="uid://dfclists1idkv" path="res://Scenes/falling_rock2.tscn" id="4_376lc"]
-[ext_resource type="Texture2D" uid="uid://cjggemutfvx1j" path="res://Assets/Sprites/Enviroment/Plants/glon_samotny2.png" id="4_vcx2e"]
-[ext_resource type="Texture2D" uid="uid://bbvm5bauba6v4" path="res://Assets/Sprites/Enviroment/Plants/glon_z_kolegami_top.png" id="5_a8w88"]
-[ext_resource type="Texture2D" uid="uid://b8yy1o8ftpjy1" path="res://Assets/Sprites/Enviroment/Plants/roslina3.png" id="6_868fh"]
-[ext_resource type="Texture2D" uid="uid://cklxd3bf224at" path="res://Assets/Sprites/Enviroment/Plants/roslina1.png" id="7_jefci"]
-[ext_resource type="Texture2D" uid="uid://c62qan2pw6fbn" path="res://Assets/Sprites/Enviroment/Rocks/Kamien_.png" id="8_ukf71"]
-[ext_resource type="Texture2D" uid="uid://catdctguoxij6" path="res://Assets/Sprites/Enviroment/Plants/glon_samotny.png" id="9_wlvd2"]
-[ext_resource type="Texture2D" uid="uid://bqwq5igqe7b4s" path="res://Assets/Sprites/Enviroment/Plants/glonyNadnie.png" id="11_qqc3a"]
-[ext_resource type="Texture2D" uid="uid://d0iygpgr224sr" path="res://Assets/Sprites/Interactive/Kotwica.png" id="12_flonl"]
-[ext_resource type="Texture2D" uid="uid://boiuo2wtn80gt" path="res://Assets/Sprites/Enviroment/Bubbles/bublepachnace.png" id="13_biy3l"]
+[ext_resource type="Texture2D" uid="uid://327f0eevi0ro" path="res://Assets/Sprites/Enviroment/Plants/glon_samotny2.png" id="4_vcx2e"]
+[ext_resource type="Texture2D" uid="uid://os2klgcal26a" path="res://Assets/Sprites/Enviroment/Skrzynia.png" id="5_a8ic0"]
+[ext_resource type="Texture2D" uid="uid://c1yrwlaf27ir6" path="res://Assets/Sprites/Enviroment/Plants/glon_z_kolegami_top.png" id="5_a8w88"]
+[ext_resource type="Texture2D" uid="uid://br4qwqqwnqudo" path="res://Assets/Sprites/Enviroment/Plants/roslina3.png" id="6_868fh"]
+[ext_resource type="Texture2D" uid="uid://cyk8raqrlaykt" path="res://Assets/Sprites/Enviroment/Plants/roslina1.png" id="7_jefci"]
+[ext_resource type="Texture2D" uid="uid://byt8s2fp5vtim" path="res://Assets/Sprites/Enviroment/Rocks/Kamien_.png" id="8_ukf71"]
+[ext_resource type="Texture2D" uid="uid://q6rxyfsy5obh" path="res://Assets/Sprites/Enviroment/Plants/glon_samotny.png" id="9_wlvd2"]
+[ext_resource type="Texture2D" uid="uid://djqpohr6r3ou4" path="res://Assets/Sprites/Enviroment/Plants/glonyNadnie.png" id="11_qqc3a"]
+[ext_resource type="Texture2D" uid="uid://bc12mlkftcuid" path="res://Assets/Sprites/Interactive/Kotwica.png" id="12_flonl"]
+[ext_resource type="Texture2D" uid="uid://danb2b11lcip3" path="res://Assets/Sprites/Enviroment/Bubbles/bublepachnace.png" id="13_biy3l"]
 [ext_resource type="PackedScene" uid="uid://djf2mb8cp5bdf" path="res://Scenes/falling_obstacles.tscn" id="13_vs76o"]
-[ext_resource type="Texture2D" uid="uid://dpc6min4ej6ih" path="res://Assets/Sprites/Enviroment/Animals/Sprite-0007-Sheet.png" id="16_0esek"]
-[ext_resource type="Texture2D" uid="uid://flfftk7xutqt" path="res://Assets/Sprites/Enviroment/Boat/odka11.png" id="17_0jw5s"]
-[ext_resource type="Texture2D" uid="uid://b8kgwt1rdbs2x" path="res://Assets/Sprites/Enviroment/Animals/RybkiMalePomaranczowe.png" id="18_wxaoh"]
+[ext_resource type="Texture2D" uid="uid://cqiu46hk0lkpn" path="res://Assets/Sprites/Enviroment/Boat/odka11.png" id="17_0jw5s"]
+[ext_resource type="Script" path="res://Scripts/RybkiRuchDoPrzodu.gd" id="17_s3n1o"]
+[ext_resource type="PackedScene" uid="uid://008pn0vyrnyc" path="res://Scenes/ZolteRybki.tscn" id="19_13rxq"]
+[ext_resource type="PackedScene" uid="uid://7juupnnmnluv" path="res://Scenes/SzareRyby.tscn" id="20_1tpmh"]
+[ext_resource type="PackedScene" uid="uid://ce8ebklcondor" path="res://Scenes/Linka.tscn" id="21_w6cm7"]
 
 [node name="Floors" type="StaticBody2D" groups=["Floor"]]
 collision_mask = 17
@@ -111,6 +114,11 @@ position = Vector2(28521, 106)
 [node name="FallingRock8" parent="Spadanie/Dmg" instance=ExtResource("4_376lc")]
 position = Vector2(36194, 609)
 
+[node name="Skrzynia" type="Sprite2D" parent="."]
+position = Vector2(37282, 989)
+scale = Vector2(2.23438, 2.23438)
+texture = ExtResource("5_a8ic0")
+
 [node name="Node" type="Node" parent="."]
 
 [node name="Gacek" type="Sprite2D" parent="Node"]
@@ -170,7 +178,7 @@ scale = Vector2(3.73438, 3.73438)
 texture = ExtResource("8_ukf71")
 
 [node name="Bublepachnace" type="Sprite2D" parent="Node"]
-position = Vector2(621, 626)
+position = Vector2(970, 1339)
 scale = Vector2(5.5625, 5.5625)
 texture = ExtResource("13_biy3l")
 
@@ -360,79 +368,375 @@ rotation = 0.47822
 scale = Vector2(2.625, 2.625)
 texture = ExtResource("3_j0pww")
 
-[node name="Sprite-0007-sheet" type="Sprite2D" parent="."]
-position = Vector2(2139, 254)
-texture = ExtResource("16_0esek")
-
-[node name="Sprite-0007-sheet2" type="Sprite2D" parent="."]
-position = Vector2(3518, 656)
-texture = ExtResource("16_0esek")
-
-[node name="Sprite-0007-sheet3" type="Sprite2D" parent="."]
-position = Vector2(5521, 171)
-texture = ExtResource("16_0esek")
-
-[node name="Sprite-0007-sheet4" type="Sprite2D" parent="."]
-position = Vector2(6446, 702)
-texture = ExtResource("16_0esek")
-
-[node name="Sprite-0007-sheet5" type="Sprite2D" parent="."]
-position = Vector2(8627, 742)
-texture = ExtResource("16_0esek")
-
-[node name="Sprite-0007-sheet6" type="Sprite2D" parent="."]
-position = Vector2(11276, 421)
-texture = ExtResource("16_0esek")
-
 [node name="Odka11" type="Sprite2D" parent="."]
-position = Vector2(15661.4, 173.5)
+position = Vector2(19022, 857)
 scale = Vector2(1.89062, 1.89063)
 texture = ExtResource("17_0jw5s")
+script = ExtResource("17_s3n1o")
 
-[node name="Sprite-0007-sheet7" type="Sprite2D" parent="."]
-position = Vector2(13949, 481)
-texture = ExtResource("16_0esek")
+[node name="RuchomeRybki" type="Node" parent="."]
 
-[node name="Sprite-0007-sheet8" type="Sprite2D" parent="."]
-position = Vector2(17389, 473)
-texture = ExtResource("16_0esek")
+[node name="Sprite2D2" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(4543, 183)
 
-[node name="Sprite-0007-sheet9" type="Sprite2D" parent="."]
-position = Vector2(20146, 569)
-texture = ExtResource("16_0esek")
+[node name="Sprite2D3" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(4589, 145)
 
-[node name="Sprite-0007-sheet10" type="Sprite2D" parent="."]
-position = Vector2(24587, 578)
-texture = ExtResource("16_0esek")
+[node name="Sprite2D4" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(4582, 185)
 
-[node name="Sprite-0007-sheet11" type="Sprite2D" parent="."]
-position = Vector2(33846, 773)
-texture = ExtResource("16_0esek")
+[node name="Sprite2D5" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(4587, 249)
 
-[node name="RybkiMalePomaranczowe" type="Sprite2D" parent="."]
-position = Vector2(31158, 533)
-texture = ExtResource("18_wxaoh")
+[node name="Sprite2D6" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(4634, 231)
 
-[node name="RybkiMalePomaranczowe2" type="Sprite2D" parent="."]
-position = Vector2(36682, 849)
-texture = ExtResource("18_wxaoh")
+[node name="Sprite2D7" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(4635, 196)
 
-[node name="RybkiMalePomaranczowe3" type="Sprite2D" parent="."]
-position = Vector2(18202, 778)
-texture = ExtResource("18_wxaoh")
+[node name="Sprite2D8" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(4649, 154)
 
-[node name="RybkiMalePomaranczowe4" type="Sprite2D" parent="."]
-position = Vector2(7390, 806)
-texture = ExtResource("18_wxaoh")
+[node name="Sprite2D9" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(4703, 204)
 
-[node name="RybkiMalePomaranczowe5" type="Sprite2D" parent="."]
-position = Vector2(4375, 678)
-texture = ExtResource("18_wxaoh")
+[node name="Sprite2D10" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(4703, 204)
 
-[node name="PlayerWin" type="Label" parent="."]
-offset_left = 37272.0
-offset_top = 121.0
-offset_right = 37824.0
-offset_bottom = 231.0
-theme_override_font_sizes/font_size = 80
-text = "Player Won! :p"
+[node name="Sprite2D38" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(8525, 683)
+
+[node name="Sprite2D39" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(7909, 763)
+
+[node name="Sprite2D40" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(7909, 763)
+
+[node name="Sprite2D41" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(8444, 761)
+
+[node name="Sprite2D42" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(8619, 722)
+
+[node name="Sprite2D43" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(8567, 809)
+
+[node name="Sprite2D44" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(8671, 807)
+
+[node name="Sprite2D46" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(16693, 241)
+
+[node name="Sprite2D47" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(16455, 690)
+
+[node name="Sprite2D67" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(14039, 686)
+
+[node name="Sprite2D68" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(13835, 674)
+
+[node name="Sprite2D69" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(13979, 743)
+
+[node name="Sprite2D70" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(13949, 602)
+
+[node name="Sprite2D51" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(23615, 862)
+
+[node name="Sprite2D52" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(23309, 730)
+
+[node name="Sprite2D53" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(23699, 674)
+
+[node name="Sprite2D54" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(23138, 788)
+
+[node name="Sprite2D55" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(23528, 756)
+
+[node name="Sprite2D56" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(24189, 689)
+
+[node name="Sprite2D101" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(29204, 521)
+
+[node name="Sprite2D102" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(31656, 662)
+
+[node name="Sprite2D103" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(31769, 570)
+
+[node name="Sprite2D104" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(31594, 522)
+
+[node name="Sprite2D105" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(31718, 578)
+
+[node name="Sprite2D106" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(34847, 847)
+
+[node name="Sprite2D107" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(34960, 755)
+
+[node name="Sprite2D108" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(34785, 707)
+
+[node name="Sprite2D109" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(34909, 763)
+
+[node name="Sprite2D110" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(36912, 883)
+
+[node name="Sprite2D111" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(38166, 773)
+
+[node name="Sprite2D112" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(36678, 730)
+
+[node name="Sprite2D113" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(37273, 702)
+
+[node name="Sprite2D48" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(16588, 221)
+
+[node name="Sprite2D49" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(16404, 630)
+
+[node name="Sprite2D50" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(16673, 125)
+
+[node name="Sprite2D64" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(12987, 316)
+
+[node name="Sprite2D65" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(12882, 296)
+
+[node name="Sprite2D66" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(12967, 200)
+
+[node name="Sprite2D45" parent="RuchomeRybki" instance=ExtResource("19_13rxq")]
+position = Vector2(8432, 679)
+
+[node name="Sprite2D11" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(3774, 687)
+
+[node name="Sprite2D12" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(3826, 686)
+
+[node name="Sprite2D13" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(3885, 638)
+
+[node name="Sprite2D14" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(3790, 632)
+
+[node name="Sprite2D15" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(3711, 682)
+
+[node name="Sprite2D16" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(3729, 748)
+
+[node name="Sprite2D17" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(3861, 730)
+
+[node name="Sprite2D18" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(3939, 705)
+
+[node name="Sprite2D19" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(4067, 695)
+
+[node name="Sprite2D25" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(5577, 786)
+
+[node name="Sprite2D26" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(5764, 759)
+
+[node name="Sprite2D27" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(5830, 783)
+
+[node name="Sprite2D28" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(5895, 799)
+
+[node name="Sprite2D29" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(6843.5, 719)
+
+[node name="Sprite2D30" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(6894.5, 694)
+
+[node name="Sprite2D31" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(6956.5, 738)
+
+[node name="Sprite2D32" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(7027.5, 707)
+
+[node name="Sprite2D33" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(6843.5, 785)
+
+[node name="Sprite2D34" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(6894.5, 760)
+
+[node name="Sprite2D35" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(6956.5, 804)
+
+[node name="Sprite2D36" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(7093, 746)
+
+[node name="Sprite2D57" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(9785.5, 677)
+
+[node name="Sprite2D58" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(9898.5, 696)
+
+[node name="Sprite2D59" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(9972, 688)
+
+[node name="Sprite2D60" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(9711, 708)
+
+[node name="Sprite2D61" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(9836.5, 718)
+
+[node name="Sprite2D62" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(9942, 711)
+
+[node name="Sprite2D63" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(10035, 704)
+
+[node name="Sprite2D71" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(13763.5, 196)
+
+[node name="Sprite2D72" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(13889, 206)
+
+[node name="Sprite2D73" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(13994.5, 199)
+
+[node name="Sprite2D74" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(14087.5, 192)
+
+[node name="Sprite2D75" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(17782, 841)
+
+[node name="Sprite2D76" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(17833, 872)
+
+[node name="Sprite2D77" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(17871, 801)
+
+[node name="Sprite2D79" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(19903, 767)
+
+[node name="Sprite2D80" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(20181.5, 815)
+
+[node name="Sprite2D81" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(25433, 199)
+
+[node name="Sprite2D82" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(25020, 230)
+
+[node name="Sprite2D83" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(25260, 242)
+
+[node name="Sprite2D84" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(25295, 123)
+
+[node name="Sprite2D85" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(25493, 270)
+
+[node name="Sprite2D86" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(25614, 229)
+
+[node name="Sprite2D87" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(25780, 221)
+
+[node name="Sprite2D88" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(25574, 176)
+
+[node name="Sprite2D89" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(25291, 296)
+
+[node name="Sprite2D90" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(24363, 549)
+
+[node name="Sprite2D92" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(30351.5, 539)
+
+[node name="Sprite2D93" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(30411.5, 610)
+
+[node name="Sprite2D94" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(30292.5, 696)
+
+[node name="Sprite2D95" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(32629, 744)
+
+[node name="Sprite2D96" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(32019, 830)
+
+[node name="Sprite2D97" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(33833, 854)
+
+[node name="Sprite2D98" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(35109, 812)
+
+[node name="Sprite2D99" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(35164, 782)
+
+[node name="Sprite2D100" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(36687, 731)
+
+[node name="Sprite2D91" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(24550, 717)
+
+[node name="Sprite2D78" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(16432, 670)
+
+[node name="Sprite2D37" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(5484, 637)
+
+[node name="Sprite2D20" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(3952, 618)
+
+[node name="Sprite2D21" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(2960, 599)
+
+[node name="Sprite2D22" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(1077.5, 521)
+
+[node name="Sprite2D23" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(1235.5, 624)
+
+[node name="Sprite2D24" parent="RuchomeRybki" instance=ExtResource("20_1tpmh")]
+position = Vector2(1958, 607)
+
+[node name="GlonZKolegamiTop3" type="Sprite2D" parent="."]
+position = Vector2(15066, 818)
+scale = Vector2(3.46875, 3.46875)
+texture = ExtResource("5_a8w88")
+
+[node name="GlonZKolegamiTop4" type="Sprite2D" parent="."]
+position = Vector2(15121.5, 812.523)
+rotation = -0.359538
+scale = Vector2(2.66693, 2.66693)
+texture = ExtResource("5_a8w88")
+
+[node name="GlonZKolegamiTop5" type="Sprite2D" parent="."]
+position = Vector2(25530, 787)
+rotation = 0.253073
+scale = Vector2(4.27492, 4.27492)
+texture = ExtResource("5_a8w88")
+flip_h = true
+
+[node name="GlonZKolegamiTop6" type="Sprite2D" parent="."]
+position = Vector2(25616, 802)
+rotation = -0.23911
+scale = Vector2(2.9375, 2.9375)
+texture = ExtResource("5_a8w88")
+flip_h = true
+
+[node name="WinDlaBubble" parent="." instance=ExtResource("21_w6cm7")]
+position = Vector2(37556, 497)
+scale = Vector2(7, 7)
