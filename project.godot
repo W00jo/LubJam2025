@@ -38,6 +38,7 @@ Bullet=""
 ShieldBubble=""
 FallingRock=""
 Floor=""
+Level=""
 
 [input]
 

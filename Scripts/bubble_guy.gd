@@ -5,6 +5,8 @@ extends CharacterBody2D
 @onready var short_on_air = $ShortOnAir
 @onready var die_no_air = $DieNoAir
 
+
+
 func _ready() -> void:
 	shield_bubble.connect("got_shield", on_got_shield)
 	anim_tree["parameters/conditions/Idle"] = true
@@ -48,6 +50,9 @@ func _on_die_no_air_timeout() -> void:
 	await anim_tree.animation_finished
 	Global.guy_dead = true
 	Global.dolphin_win()
+ 
+
+
 
 func _on_body_area_area_entered(area: Area2D) -> void:
 	if Global.has_shield == false:
@@ -56,3 +61,6 @@ func _on_body_area_area_entered(area: Area2D) -> void:
 			await anim_tree.animation_finished
 			Global.guy_dead = true
 			Global.dolphin_win()
+			
+			
+			

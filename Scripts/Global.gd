@@ -3,6 +3,8 @@ extends Node
 @onready var win = preload("res://Scenes/win.tscn")
 @onready var win_layer = get_tree().root.get_node('Game/WinLayer')
 @onready var shader = get_tree().root.get_node('Game/Level/Shader')
+@onready var game = get_tree().root.get_node('Game')
+@onready var level = preload("res://Scenes/level_0.tscn")
 
 var win_texture
 
@@ -24,12 +26,15 @@ func dolphin_win():
 	get_tree().paused = true
 	var splash_win = win.instantiate()
 	win_layer.add_child(splash_win)
-	win_texture = load("res://Assets/Sprites/Menu/dolphin_won.png")
 	
 func guy_win():
 	get_tree().paused = true
 	var splash_win = win.instantiate()
 	win_layer.add_child(splash_win)
-	win_texture = load("res://Assets/Sprites/Menu/Bublin_chlop_won.png")
 	
+func on_restart():
+	get_tree().get_first_node_in_group("Level").queue_free()
+	var reloaded_level = level.instantiate()
+	reloaded_level.add_to_group("Level")
+	game.add_child(reloaded_level)
 	

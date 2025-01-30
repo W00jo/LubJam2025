@@ -1,118 +1,13 @@
-[gd_scene load_steps=13 format=3 uid="uid://c0r23lm2xyl01"]
+[gd_scene load_steps=4 format=3 uid="uid://c0r23lm2xyl01"]
 
-[ext_resource type="Script" path="res://Scripts/level.gd" id="1_87dlu"]
-[ext_resource type="PackedScene" uid="uid://31sgm2m6coed" path="res://Scenes/bubble_guy.tscn" id="1_k043y"]
-[ext_resource type="PackedScene" uid="uid://gvfdf4fim2n0" path="res://Scenes/dolphin.tscn" id="2_a4dgr"]
-[ext_resource type="PackedScene" uid="uid://hg7f7x82640v" path="res://Scenes/parallax_mapa1.tscn" id="2_telu0"]
-[ext_resource type="PackedScene" uid="uid://bk7nkdcj7xens" path="res://Scenes/floors.tscn" id="3_ys4qp"]
-[ext_resource type="PackedScene" uid="uid://48io4jtiaj5t" path="res://Scenes/falling_rock.tscn" id="4_mro6d"]
-[ext_resource type="PackedScene" uid="uid://yuv1d10akw2h" path="res://Scenes/collectible_bullet.tscn" id="5_38l20"]
-[ext_resource type="PackedScene" uid="uid://d3jkfuc0bhhh0" path="res://Scenes/stinky_bubble.tscn" id="6_lt1nt"]
-[ext_resource type="PackedScene" uid="uid://brsj11mvkc6fj" path="res://Scenes/side.tscn" id="7_lj3i0"]
-[ext_resource type="PackedScene" uid="uid://cphod0ydvo8ke" path="res://Scenes/shield_bubble.tscn" id="8_odn0u"]
+[ext_resource type="PackedScene" uid="uid://dycaivlgy07q" path="res://Scenes/level.tscn" id="1_1l20j"]
 [ext_resource type="PackedScene" uid="uid://c10e4kd8e6o3g" path="res://Scenes/menu.tscn" id="10_2t82o"]
 [ext_resource type="PackedScene" uid="uid://bcyrah88k0iba" path="res://Scenes/instructions.tscn" id="11_8dwh7"]
 
 [node name="Game" type="Node"]
 process_mode = 3
 
-[node name="Level" type="Node2D" parent="."]
-process_mode = 1
-script = ExtResource("1_87dlu")
-
-[node name="ParallaxBackground" parent="Level" instance=ExtResource("2_telu0")]
-
-[node name="FallingRock2" parent="Level" instance=ExtResource("4_mro6d")]
-position = Vector2(2399, 114)
-
-[node name="Floors" parent="Level" instance=ExtResource("3_ys4qp")]
-collision_mask = 1
-
-[node name="BubbleGuy" parent="Level" instance=ExtResource("1_k043y")]
-position = Vector2(1600, 267)
-collision_mask = 15
-
-[node name="Delfin" parent="Level" instance=ExtResource("2_a4dgr")]
-position = Vector2(800, 509)
-scale = Vector2(2, 2)
-collision_mask = 15
-
-[node name="Camera2D" type="Camera2D" parent="Level"]
-position = Vector2(960, 540)
-
-[node name="CollectibleBullet" parent="Level" instance=ExtResource("5_38l20")]
-position = Vector2(1073, 540)
-
-[node name="StinkyBubble" parent="Level" instance=ExtResource("6_lt1nt")]
-position = Vector2(871, 543)
-
-[node name="ShieldBubble" parent="Level" instance=ExtResource("8_odn0u")]
-position = Vector2(1192, 194)
-
-[node name="CollectibleBullet2" parent="Level" instance=ExtResource("5_38l20")]
-position = Vector2(2895, 200)
-
-[node name="CollectibleBullet3" parent="Level" instance=ExtResource("5_38l20")]
-position = Vector2(5991, 826)
-
-[node name="CollectibleBullet4" parent="Level" instance=ExtResource("5_38l20")]
-position = Vector2(9098, 943)
-
-[node name="CollectibleBullet5" parent="Level" instance=ExtResource("5_38l20")]
-position = Vector2(11856, 327)
-
-[node name="CollectibleBullet6" parent="Level" instance=ExtResource("5_38l20")]
-position = Vector2(14353, 729)
-
-[node name="CollectibleBullet7" parent="Level" instance=ExtResource("5_38l20")]
-position = Vector2(15852, 172)
-
-[node name="CollectibleBullet8" parent="Level" instance=ExtResource("5_38l20")]
-position = Vector2(18525, 551)
-
-[node name="CollectibleBullet9" parent="Level" instance=ExtResource("5_38l20")]
-position = Vector2(20612, 574)
-
-[node name="CollectibleBullet10" parent="Level" instance=ExtResource("5_38l20")]
-position = Vector2(22071, 656)
-
-[node name="CollectibleBullet11" parent="Level" instance=ExtResource("5_38l20")]
-position = Vector2(25120, 741)
-
-[node name="CollectibleBullet12" parent="Level" instance=ExtResource("5_38l20")]
-position = Vector2(27733, 659)
-
-[node name="CollectibleBullet13" parent="Level" instance=ExtResource("5_38l20")]
-position = Vector2(29826, 549)
-
-[node name="CollectibleBullet14" parent="Level" instance=ExtResource("5_38l20")]
-position = Vector2(33030, 790)
-
-[node name="CollectibleBullet15" parent="Level" instance=ExtResource("5_38l20")]
-position = Vector2(34583, 948)
-
-[node name="ShieldBubble2" parent="Level" instance=ExtResource("8_odn0u")]
-position = Vector2(4719, 682)
-
-[node name="ShieldBubble3" parent="Level" instance=ExtResource("8_odn0u")]
-position = Vector2(10381, 560)
-
-[node name="ShieldBubble4" parent="Level" instance=ExtResource("8_odn0u")]
-position = Vector2(15132, 225)
-
-[node name="ShieldBubble5" parent="Level" instance=ExtResource("8_odn0u")]
-position = Vector2(20174, 938)
-
-[node name="ShieldBubble6" parent="Level" instance=ExtResource("8_odn0u")]
-position = Vector2(30945, 250)
-
-[node name="ShieldBubble8" parent="Level" instance=ExtResource("8_odn0u")]
-position = Vector2(34224, 945)
-
-[node name="ShieldBubble7" parent="Level" instance=ExtResource("8_odn0u")]
-position = Vector2(26051, 685)
-
-[node name="Side" parent="Level" instance=ExtResource("7_lj3i0")]
+[node name="Level" parent="." groups=["Level"] instance=ExtResource("1_1l20j")]
 
 [node name="MenuLayer" type="CanvasLayer" parent="."]
 process_mode = 3
