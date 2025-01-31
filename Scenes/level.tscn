@@ -1,15 +1,19 @@
-[gd_scene load_steps=11 format=3 uid="uid://dycaivlgy07q"]
+[gd_scene load_steps=12 format=3 uid="uid://dycaivlgy07q"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_qa8xk"]
 [ext_resource type="PackedScene" uid="uid://hg7f7x82640v" path="res://Scenes/parallax_mapa1.tscn" id="2_j48kx"]
-[ext_resource type="PackedScene" uid="uid://48io4jtiaj5t" path="res://Scenes/falling_rock.tscn" id="3_tbuo7"]
 [ext_resource type="PackedScene" uid="uid://bk7nkdcj7xens" path="res://Scenes/floors.tscn" id="4_8jxsa"]
 [ext_resource type="PackedScene" uid="uid://31sgm2m6coed" path="res://Scenes/bubble_guy.tscn" id="5_dxn7b"]
 [ext_resource type="PackedScene" uid="uid://gvfdf4fim2n0" path="res://Scenes/dolphin.tscn" id="6_2tptr"]
 [ext_resource type="PackedScene" uid="uid://yuv1d10akw2h" path="res://Scenes/collectible_bullet.tscn" id="7_0wplc"]
+[ext_resource type="Shader" path="res://game.gdshader" id="8_2f70e"]
 [ext_resource type="PackedScene" uid="uid://d3jkfuc0bhhh0" path="res://Scenes/stinky_bubble.tscn" id="8_b7ch7"]
 [ext_resource type="PackedScene" uid="uid://cphod0ydvo8ke" path="res://Scenes/shield_bubble.tscn" id="9_ghmt6"]
 [ext_resource type="PackedScene" uid="uid://brsj11mvkc6fj" path="res://Scenes/side.tscn" id="10_dtyab"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0bp2o"]
+shader = ExtResource("8_2f70e")
+shader_parameter/intensity = 1.0
 
 [node name="Level0" type="Node2D"]
 process_mode = 1
@@ -17,20 +21,8 @@ script = ExtResource("1_qa8xk")
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("2_j48kx")]
 
-[node name="FallingRock2" parent="." instance=ExtResource("3_tbuo7")]
-position = Vector2(2399, 114)
-
 [node name="Floors" parent="." instance=ExtResource("4_8jxsa")]
 collision_mask = 1
-
-[node name="BubbleGuy" parent="." instance=ExtResource("5_dxn7b")]
-position = Vector2(1600, 267)
-collision_mask = 15
-
-[node name="Delfin" parent="." instance=ExtResource("6_2tptr")]
-position = Vector2(800, 509)
-scale = Vector2(2, 2)
-collision_mask = 15
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(960, 540)
@@ -99,12 +91,33 @@ position = Vector2(15132, 225)
 position = Vector2(20174, 938)
 
 [node name="ShieldBubble6" parent="." instance=ExtResource("9_ghmt6")]
-position = Vector2(30945, 250)
+position = Vector2(26052, 686)
+
+[node name="ShieldBubble7" parent="." instance=ExtResource("9_ghmt6")]
+position = Vector2(30916, 227)
 
 [node name="ShieldBubble8" parent="." instance=ExtResource("9_ghmt6")]
 position = Vector2(34224, 945)
 
-[node name="ShieldBubble7" parent="." instance=ExtResource("9_ghmt6")]
-position = Vector2(26051, 685)
+[node name="Shader" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_0bp2o")
+layout_direction = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40322.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.215686, 0.435294, 0.752941, 0.443137)
+
+[node name="BubbleGuy" parent="." instance=ExtResource("5_dxn7b")]
+position = Vector2(1600, 267)
+collision_mask = 15
+
+[node name="Delfin" parent="." instance=ExtResource("6_2tptr")]
+position = Vector2(800, 509)
+scale = Vector2(2, 2)
+collision_mask = 15
 
 [node name="Side" parent="." instance=ExtResource("10_dtyab")]

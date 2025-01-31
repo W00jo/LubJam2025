@@ -24,15 +24,15 @@ collision_layer = 4
 position = Vector2(0, 458.5)
 shape = SubResource("RectangleShape2D_8exj8")
 
-[node name="Killbox" type="Area2D" parent="."]
-collision_layer = 8
+[node name="Killbox" type="Area2D" parent="." groups=["RockKillbox"]]
+collision_layer = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox"]
 position = Vector2(7, 36)
 shape = SubResource("RectangleShape2D_y3m7w")
 
 [node name="SelfDestructTimer" type="Timer" parent="."]
-wait_time = 3.5
+wait_time = 3.0
 one_shot = true
 
 [connection signal="body_entered" from="TriggerArea" to="." method="_on_trigger_area_body_entered"]

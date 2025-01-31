@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/Banger.mp3-1048ca95bca69faa99b052e669a1c048.m
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

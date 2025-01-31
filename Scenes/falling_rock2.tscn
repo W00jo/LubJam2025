@@ -24,8 +24,8 @@ collision_layer = 4
 position = Vector2(0, 168)
 shape = SubResource("RectangleShape2D_8exj8")
 
-[node name="Killbox" type="Area2D" parent="."]
-collision_layer = 8
+[node name="Killbox" type="Area2D" parent="." groups=["RockKillbox"]]
+collision_layer = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox"]
 position = Vector2(-0.5, 22.75)

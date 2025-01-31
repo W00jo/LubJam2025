@@ -12,7 +12,7 @@ func _ready() -> void:
 
 func _on_play_pressed() -> void:
 	instructions.visible = true
-	shader_canvas.visible = true
+	#shader_canvas.visible = true
 	menu.queue_free()
 	Audio.game_music = preload("res://Assets/Sounds/Banger.mp3")
 	Audio.play_music()

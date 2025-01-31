@@ -4,7 +4,7 @@ extends CharacterBody2D
 @onready var anim_tree = $AnimationTree
 
 func _ready() -> void:
-	falling_rock.connect("bump_kill", on_bump_kill)
+	pass
 
 func _process(delta):
 	var mouse_position = get_global_mouse_position()

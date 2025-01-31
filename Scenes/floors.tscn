@@ -90,6 +90,12 @@ position = Vector2(22281, 662)
 
 [node name="Dmg" type="Node" parent="Spadanie"]
 
+[node name="FallingRock9" parent="Spadanie/Dmg" instance=ExtResource("3_titvf")]
+position = Vector2(2399, 114)
+
+[node name="FallingRock2" parent="Spadanie/Dmg" instance=ExtResource("4_376lc")]
+position = Vector2(5286, 105)
+
 [node name="FallingRock" parent="Spadanie/Dmg" instance=ExtResource("3_titvf")]
 position = Vector2(6936, 490)
 
@@ -102,9 +108,6 @@ position = Vector2(16826, 92)
 [node name="FallingRock5" parent="Spadanie/Dmg" instance=ExtResource("3_titvf")]
 position = Vector2(20469, 527)
 
-[node name="FallingRock2" parent="Spadanie/Dmg" instance=ExtResource("4_376lc")]
-position = Vector2(5286, 105)
-
 [node name="FallingRock6" parent="Spadanie/Dmg" instance=ExtResource("4_376lc")]
 position = Vector2(25153, 108)
 
@@ -112,75 +115,75 @@ position = Vector2(25153, 108)
 position = Vector2(28521, 106)
 
 [node name="FallingRock8" parent="Spadanie/Dmg" instance=ExtResource("4_376lc")]
-position = Vector2(36194, 609)
+position = Vector2(36198, 609)
 
 [node name="Skrzynia" type="Sprite2D" parent="."]
 position = Vector2(37282, 989)
 scale = Vector2(2.23438, 2.23438)
 texture = ExtResource("5_a8ic0")
 
-[node name="Node" type="Node" parent="."]
-
-[node name="Gacek" type="Sprite2D" parent="Node"]
+[node name="Gacek2" type="Sprite2D" parent="."]
 position = Vector2(3040, 238)
 scale = Vector2(5.5, 5.5)
 texture = ExtResource("2_ut2kb")
 
-[node name="KosciDelfina" type="Sprite2D" parent="Node"]
+[node name="KosciDelfina8" type="Sprite2D" parent="."]
 position = Vector2(26596, 769)
 scale = Vector2(8.3125, 8.3125)
 texture = ExtResource("3_j0pww")
 
-[node name="GlonSamotny2" type="Sprite2D" parent="Node"]
+[node name="GlonSamotny11" type="Sprite2D" parent="."]
 position = Vector2(28734, 741)
 scale = Vector2(6.6875, 6.6875)
 texture = ExtResource("4_vcx2e")
 
-[node name="GlonZKolegamiTop" type="Sprite2D" parent="Node"]
+[node name="GlonZKolegamiTop7" type="Sprite2D" parent="."]
 position = Vector2(25471, 747)
 scale = Vector2(6.24998, 6.24998)
 texture = ExtResource("5_a8w88")
 
-[node name="GlonSamotny3" type="Sprite2D" parent="Node"]
+[node name="GlonSamotny12" type="Sprite2D" parent="."]
 position = Vector2(24790, 850)
 scale = Vector2(3.84374, 3.84374)
 texture = ExtResource("4_vcx2e")
 
-[node name="GlonSamotny4" type="Sprite2D" parent="Node"]
+[node name="GlonSamotny13" type="Sprite2D" parent="."]
 position = Vector2(527, 770)
 scale = Vector2(6.5, 6.5)
 texture = ExtResource("4_vcx2e")
 
-[node name="Roslina3" type="Sprite2D" parent="Node"]
+[node name="Roslina7" type="Sprite2D" parent="."]
 position = Vector2(2480, 742)
 scale = Vector2(3.4375, 3.4375)
 texture = ExtResource("6_868fh")
 
-[node name="Roslina1" type="Sprite2D" parent="Node"]
+[node name="Roslina8" type="Sprite2D" parent="."]
 position = Vector2(1694, 760)
 scale = Vector2(4.25, 4.25)
 texture = ExtResource("7_jefci")
 
-[node name="GlonSamotny" type="Sprite2D" parent="Node"]
+[node name="GlonSamotny" type="Sprite2D" parent="."]
 position = Vector2(2410, 790)
 scale = Vector2(5, 5)
 texture = ExtResource("9_wlvd2")
 
-[node name="Kamien" type="Sprite2D" parent="Node"]
+[node name="Kamien" type="Sprite2D" parent="."]
 position = Vector2(692, 805)
 rotation = -0.120428
 scale = Vector2(5.96875, 5.96875)
 texture = ExtResource("8_ukf71")
 
-[node name="Kamien2" type="Sprite2D" parent="Node"]
+[node name="Kamien2" type="Sprite2D" parent="."]
 position = Vector2(1852, 827)
 scale = Vector2(3.73438, 3.73438)
 texture = ExtResource("8_ukf71")
 
-[node name="Bublepachnace" type="Sprite2D" parent="Node"]
+[node name="Bublepachnace" type="Sprite2D" parent="."]
 position = Vector2(970, 1339)
 scale = Vector2(5.5625, 5.5625)
 texture = ExtResource("13_biy3l")
+
+[node name="Node" type="Node" parent="."]
 
 [node name="GlonSamotny2" type="Sprite2D" parent="."]
 position = Vector2(3926, 779)
@@ -207,12 +210,12 @@ texture = ExtResource("6_868fh")
 position = Vector2(8600, 939)
 texture = ExtResource("11_qqc3a")
 
-[node name="GlonyNadnie" type="Sprite2D" parent="GlonyNadnie"]
-position = Vector2(10254, -9)
+[node name="GlonyNadnie6" type="Sprite2D" parent="."]
+position = Vector2(18854, 930)
 texture = ExtResource("11_qqc3a")
 
-[node name="GlonyNadnie2" type="Sprite2D" parent="GlonyNadnie"]
-position = Vector2(12136, -9)
+[node name="GlonyNadnie7" type="Sprite2D" parent="."]
+position = Vector2(20736, 930)
 texture = ExtResource("11_qqc3a")
 
 [node name="Roslina4" type="Sprite2D" parent="."]

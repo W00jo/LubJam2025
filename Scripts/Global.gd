@@ -5,8 +5,6 @@ extends Node
 @onready var game = get_tree().root.get_node('Game')
 @onready var level = preload("res://Scenes/level.tscn")
 
-var win_texture
-
 var has_bullet: bool = true
 
 var has_shield: bool = true
@@ -36,4 +34,12 @@ func on_restart():
 	var reloaded_level = level.instantiate()
 	reloaded_level.add_to_group("Level")
 	game.add_child(reloaded_level)
+	has_bullet = true
+	has_shield = true
+	guy_dead = false
+	dolphin_dead = false
+	guy_speed = 380
+	dolphin_speed = 370
+
+	
 	
