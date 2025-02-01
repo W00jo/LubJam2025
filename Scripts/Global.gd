@@ -5,7 +5,6 @@ extends Node
 @onready var game = get_tree().root.get_node('Game')
 @onready var level = preload("res://Scenes/level.tscn")
 
-
 var has_bullet: bool = false
 
 var has_shield: bool = true
@@ -17,6 +16,9 @@ var guy_speed = 380
 var dolphin_speed = 370
 
 var guy_saved = false
+
+func _init() -> void:
+	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 
 func dolphin_win():
 	if get_tree().paused == false:
@@ -31,6 +33,7 @@ func guy_win():
 		get_tree().paused = true
 		var splash_win = win.instantiate()
 		win_layer.add_child(splash_win)
+		splash_win.get_node('Restart').grab_focus()
 		Audio.game_music = preload("res://Assets/Sounds/Bubbloczłek Wygrywa.mp3")
 		Audio.play_music()
 	

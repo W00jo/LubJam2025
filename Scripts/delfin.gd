@@ -14,11 +14,16 @@ func _ready() -> void:
 	#stinky_bubble.connect("stinky_mniam", on_stinky)
 
 func _process(delta):
-	var mouse_position = get_global_mouse_position()
-
-	if mouse_position.x > position.x:
+	#var mouse_position = get_global_mouse_position()
+#
+	#if mouse_position.x > position.x:
+		#$Sprite2D.set_flip_h(false)
+	#elif mouse_position.x < position.x:
+		#$Sprite2D.set_flip_h(true)
+	
+	if Input.get_action_strength("aim_right"):
 		$Sprite2D.set_flip_h(false)
-	elif mouse_position.x < position.x:
+	elif Input.get_action_strength("aim_left"):
 		$Sprite2D.set_flip_h(true)
 
 func _physics_process(delta: float) -> void:
