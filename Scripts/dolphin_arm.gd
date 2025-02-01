@@ -35,5 +35,5 @@ func _input(event: InputEvent) -> void:
 			await get_tree().create_timer(0.1).timeout
 			anim_tree["parameters/conditions/Start_AIM"] = false
 			aim_line.add_point(aim_line.position, 0)
-			var end_aim = Vector2(aim_line.position.x + 2000, aim_line.position.y)
+			var end_aim = Vector2(aim_line.position.x + 200, aim_line.position.y)
 			aim_line.add_point(end_aim, 1)

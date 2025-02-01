@@ -15,7 +15,6 @@ scale = Vector2(4, 4)
 texture = ExtResource("2_a6xwa")
 
 [node name="CollectionArea" type="Area2D" parent="."]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollectionArea"]
 position = Vector2(0.249999, 0.25)

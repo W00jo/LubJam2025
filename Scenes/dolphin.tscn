@@ -1,17 +1,19 @@
-[gd_scene load_steps=37 format=3 uid="uid://gvfdf4fim2n0"]
+[gd_scene load_steps=39 format=3 uid="uid://gvfdf4fim2n0"]
 
 [ext_resource type="Script" path="res://Scripts/delfin.gd" id="1_lv03r"]
 [ext_resource type="Texture2D" uid="uid://d74vsx7erofq" path="res://Assets/Sprites/Characters/Delphin/Delfin_All_Sheets.png" id="2_cdavg"]
 [ext_resource type="Script" path="res://Scripts/dolphin_arm.gd" id="3_kua7p"]
 [ext_resource type="Texture2D" uid="uid://diruqhfj617ft" path="res://Assets/Sprites/Characters/Delphin/Delfinsamareka20.png" id="4_b4p31"]
+[ext_resource type="AudioStream" uid="uid://c0vkdls75s2jd" path="res://Assets/Sounds/DelfinKukuSound.mp3" id="5_bbla4"]
+[ext_resource type="Texture2D" uid="uid://dyredvaqbfs11" path="res://Assets/Sprites/Characters/dymek_mniam.png" id="6_bxs6p"]
 
 [sub_resource type="Gradient" id="Gradient_kgtv5"]
-offsets = PackedFloat32Array(0, 0.246667)
-colors = PackedColorArray(1, 1, 1, 0.745098, 1, 1, 1, 0)
+offsets = PackedFloat32Array(0, 0.002331, 0.588578)
+colors = PackedColorArray(1, 1, 1, 0.768627, 1, 1, 1, 0, 1, 1, 1, 0)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ml5yh"]
 radius = 20.0
-height = 110.0
+height = 98.0
 
 [sub_resource type="Animation" id="Animation_upye3"]
 resource_name = "Aim"
@@ -272,7 +274,7 @@ states/Aim/node = SubResource("AnimationNodeAnimation_6vmcs")
 states/Aim/position = Vector2(908, 100)
 states/End/position = Vector2(1108, 100)
 states/Get_DMG/node = SubResource("AnimationNodeAnimation_32srk")
-states/Get_DMG/position = Vector2(625, 93)
+states/Get_DMG/position = Vector2(723, 120)
 states/Get_Down/node = SubResource("AnimationNodeAnimation_6ms6j")
 states/Get_Down/position = Vector2(529, 202)
 states/Get_UP/node = SubResource("AnimationNodeAnimation_8npe4")
@@ -313,16 +315,16 @@ gradient = SubResource("Gradient_kgtv5")
 position = Vector2(5, 6)
 texture = ExtResource("4_b4p31")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2, 5)
-rotation = 1.5708
-shape = SubResource("CapsuleShape2D_ml5yh")
-
 [node name="Hitbox" type="Area2D" parent="."]
 collision_layer = 129
 collision_mask = 129
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(2, 5)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_ml5yh")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(2, 5)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_ml5yh")
@@ -340,3 +342,11 @@ anim_player = NodePath("../AnimationPlayer")
 parameters/conditions/Start_AIM = false
 parameters/conditions/Stop_AIM = false
 parameters/conditions/dead = false
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_bbla4")
+
+[node name="DymekMniam" type="Sprite2D" parent="."]
+position = Vector2(64, -38)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("6_bxs6p")

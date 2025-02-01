@@ -5,7 +5,7 @@ extends Control
 
 
 func _ready() -> void:
-	if Global.dolphin_dead == true:
+	if Global.dolphin_dead == true or Global.guy_saved == true:
 		#$"Bubble wins".visible = true
 		#$"DolphinWins".visible = false
 		win_texture.texture = load("res://Assets/Sprites/Menu/Bublin_chlop_won2.png")

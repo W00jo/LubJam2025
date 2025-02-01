@@ -8,17 +8,20 @@ var has_landed: bool = false # Czy już dotknął "Floor"
 @onready var killbox = $Killbox
 @onready var trigger_area = $TriggerArea
 @onready var collision_shape = $CollisionObstacle
+@onready var sfx = $SFX
 
 func _ready():
 	# Killbox i Collision_Obstacle domyślnie są wyłączone
 	killbox.monitoring = false
+	collision_shape.disabled = true
 
 func _physics_process(delta: float) -> void:
 	if is_falling:
 		global_position.y += fall_speed * delta
 		
 	if has_landed and collision_shape != null:
-		if collision_shape.disabled:
+		if collision_shape.disabled == true:
+			print("enabled collision...")
 			collision_shape.disabled = false
 
 # Funkcja wykrywająca graczy; triggeruje spadanie głazu
@@ -29,8 +32,9 @@ func _on_trigger_area_body_entered(body: Node2D) -> void:
 		print("Wykryty gracza/czy")
 		is_falling = true
 		killbox.monitoring = true
+		sfx.play()
 
-# 
+
 func _on_killbox_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Floor"):
 		is_falling = false

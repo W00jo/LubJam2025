@@ -39,6 +39,7 @@ ShieldBubble=""
 FallingRock=""
 Floor=""
 RockKillbox=""
+StinkyBubble=""
 
 [input]
 

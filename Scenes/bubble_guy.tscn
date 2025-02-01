@@ -1,7 +1,9 @@
-[gd_scene load_steps=54 format=3 uid="uid://31sgm2m6coed"]
+[gd_scene load_steps=56 format=3 uid="uid://31sgm2m6coed"]
 
 [ext_resource type="Script" path="res://Scripts/bubble_guy.gd" id="1_v53aw"]
 [ext_resource type="Texture2D" uid="uid://be6a1lrdmrnno" path="res://Assets/Sprites/Characters/Bubble-Sheet.png" id="3_3im20"]
+[ext_resource type="AudioStream" uid="uid://vcy73tpgkaph" path="res://Assets/Sounds/BubblePopSound.mp3" id="3_yrydu"]
+[ext_resource type="Texture2D" uid="uid://dvy1t82bmuhla" path="res://Assets/Sprites/Characters/dymek_ew.png" id="4_bjscs"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fln30"]
 radius = 59.357
@@ -147,6 +149,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [23]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_5rdhp"]
@@ -379,11 +393,11 @@ transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition
 graph_offset = Vector2(108, -52)
 
 [node name="BubbleGuy" type="CharacterBody2D" groups=["BubbleGuy"]]
-collision_layer = 129
-collision_mask = 159
+collision_mask = 31
 script = ExtResource("1_v53aw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0, -0.5)
 shape = SubResource("CircleShape2D_fln30")
 
@@ -395,11 +409,13 @@ hframes = 60
 frame = 23
 
 [node name="ShieldArea" type="Area2D" parent="."]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldArea"]
 shape = SubResource("CapsuleShape2D_2hfaa")
 
 [node name="BodyArea" type="Area2D" parent="."]
+visible = false
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="BodyArea"]
 position = Vector2(-1.5, -2)
@@ -430,6 +446,14 @@ one_shot = true
 [node name="DieNoAir" type="Timer" parent="."]
 wait_time = 7.0
 one_shot = true
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_yrydu")
+
+[node name="DymekEw" type="Sprite2D" parent="."]
+position = Vector2(57, -67)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("4_bjscs")
 
 [connection signal="area_entered" from="ShieldArea" to="." method="_on_shield_area_area_entered"]
 [connection signal="area_entered" from="BodyArea" to="." method="_on_body_area_area_entered"]

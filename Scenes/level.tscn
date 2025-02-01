@@ -30,12 +30,6 @@ position = Vector2(960, 540)
 [node name="CollectibleBullet" parent="." instance=ExtResource("7_0wplc")]
 position = Vector2(1073, 540)
 
-[node name="StinkyBubble" parent="." instance=ExtResource("8_b7ch7")]
-position = Vector2(871, 543)
-
-[node name="ShieldBubble" parent="." instance=ExtResource("9_ghmt6")]
-position = Vector2(1192, 194)
-
 [node name="CollectibleBullet2" parent="." instance=ExtResource("7_0wplc")]
 position = Vector2(2895, 200)
 
@@ -78,17 +72,26 @@ position = Vector2(33030, 790)
 [node name="CollectibleBullet15" parent="." instance=ExtResource("7_0wplc")]
 position = Vector2(34583, 948)
 
-[node name="ShieldBubble2" parent="." instance=ExtResource("9_ghmt6")]
-position = Vector2(4719, 682)
+[node name="ShieldBubble" parent="." instance=ExtResource("9_ghmt6")]
+position = Vector2(3884, 319)
+
+[node name="StinkyBubble" parent="." instance=ExtResource("8_b7ch7")]
+position = Vector2(7316, 969)
 
 [node name="ShieldBubble3" parent="." instance=ExtResource("9_ghmt6")]
 position = Vector2(10381, 560)
 
+[node name="StinkyBubble2" parent="." instance=ExtResource("8_b7ch7")]
+position = Vector2(12763, 739)
+
+[node name="StinkyBubble5" parent="." instance=ExtResource("8_b7ch7")]
+position = Vector2(1749, 471)
+
 [node name="ShieldBubble4" parent="." instance=ExtResource("9_ghmt6")]
 position = Vector2(15132, 225)
 
-[node name="ShieldBubble5" parent="." instance=ExtResource("9_ghmt6")]
-position = Vector2(20174, 938)
+[node name="StinkyBubble3" parent="." instance=ExtResource("8_b7ch7")]
+position = Vector2(20174, 937)
 
 [node name="ShieldBubble6" parent="." instance=ExtResource("9_ghmt6")]
 position = Vector2(26052, 686)
@@ -96,8 +99,8 @@ position = Vector2(26052, 686)
 [node name="ShieldBubble7" parent="." instance=ExtResource("9_ghmt6")]
 position = Vector2(30916, 227)
 
-[node name="ShieldBubble8" parent="." instance=ExtResource("9_ghmt6")]
-position = Vector2(34224, 945)
+[node name="StinkyBubble4" parent="." instance=ExtResource("8_b7ch7")]
+position = Vector2(34823, 851)
 
 [node name="Shader" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_0bp2o")
@@ -112,11 +115,11 @@ grow_vertical = 2
 color = Color(0.215686, 0.435294, 0.752941, 0.443137)
 
 [node name="BubbleGuy" parent="." instance=ExtResource("5_dxn7b")]
-position = Vector2(1600, 267)
+position = Vector2(1537, 288)
 collision_mask = 15
 
 [node name="Delfin" parent="." instance=ExtResource("6_2tptr")]
-position = Vector2(800, 509)
+position = Vector2(737, 530)
 scale = Vector2(2, 2)
 collision_mask = 15
 
