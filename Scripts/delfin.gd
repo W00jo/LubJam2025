@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var game = get_tree().root.get_node('Game')
 @onready var falling_rock = get_tree().get_first_node_in_group("FallingRock")
 @onready var stinky_bubble = get_tree().get_first_node_in_group("StinkyBubble")
 @onready var anim_tree = $AnimationTree
@@ -14,17 +15,18 @@ func _ready() -> void:
 	#stinky_bubble.connect("stinky_mniam", on_stinky)
 
 func _process(delta):
-	#var mouse_position = get_global_mouse_position()
-#
-	#if mouse_position.x > position.x:
-		#$Sprite2D.set_flip_h(false)
-	#elif mouse_position.x < position.x:
-		#$Sprite2D.set_flip_h(true)
+	if game.INPUT_SCHEME == game.INPUT_SCHEMES.KEYBOARD_AND_MOUSE:
+		var mouse_position = get_global_mouse_position()
+		if mouse_position.x > position.x:
+			$Sprite2D.set_flip_h(false)
+		elif mouse_position.x < position.x:
+			$Sprite2D.set_flip_h(true)
 	
-	if Input.get_action_strength("aim_right"):
-		$Sprite2D.set_flip_h(false)
-	elif Input.get_action_strength("aim_left"):
-		$Sprite2D.set_flip_h(true)
+	elif game.INPUT_SCHEME == game.INPUT_SCHEMES.GAMEPAD:
+		if Input.get_action_strength("aim_right"):
+			$Sprite2D.set_flip_h(false)
+		elif Input.get_action_strength("aim_left"):
+			$Sprite2D.set_flip_h(true)
 
 func _physics_process(delta: float) -> void:
 	var speed = Global.dolphin_speed

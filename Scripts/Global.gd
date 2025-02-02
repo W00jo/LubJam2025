@@ -17,8 +17,6 @@ var dolphin_speed = 370
 
 var guy_saved = false
 
-func _init() -> void:
-	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 
 func dolphin_win():
 	if get_tree().paused == false:
