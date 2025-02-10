@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://k7evt7vqtn86"]
 
 [ext_resource type="Script" path="res://Scripts/win.gd" id="1_wre44"]
-[ext_resource type="Texture2D" uid="uid://tl2pa3dhdmoj" path="res://Assets/Sprites/Menu/play_again.png" id="3_5wra6"]
-[ext_resource type="Texture2D" uid="uid://sw6jfqi2jih" path="res://Assets/Sprites/Menu/exit.png" id="4_xjl33"]
+[ext_resource type="Texture2D" uid="uid://da5wl5hkysgpq" path="res://Assets/Sprites/Menu/play_again.png" id="3_5wra6"]
+[ext_resource type="Texture2D" uid="uid://piwx25idqe1c" path="res://Assets/Sprites/Menu/exit.png" id="4_xjl33"]
 
 [node name="Win" type="Control"]
 process_mode = 3
